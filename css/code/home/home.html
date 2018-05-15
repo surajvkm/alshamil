@@ -1,0 +1,1288 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- -------- Icon -------- -->
+    <link rel="icon" type="image/x-icon" href="../../assets/favicon.ico">
+
+    <!-- -------- Title -------- -->
+    <title>Al-Shamil</title>
+
+    <!-- -------- Bootstrap CSS -------- -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <!-- -------- Custom CSS -------- -->
+    <!-- For global styles -->
+    <link rel="stylesheet" href="../../styles.css">
+    <!-- For Sidebar and Navbar -->
+    <link rel="stylesheet" href="../default.css">
+    <!-- Each PAGE CSS -->
+    <link rel="stylesheet" href="./home.css">
+
+</head>
+
+<body>
+
+    <!-- ------------------------- NAVBAR starts ------------------------- -->
+    <nav class="navbar navbar-expand-md navbar-light p-md-3 p-1">
+
+        <!-- ------- Logo ------- -->
+        <a class="navbar-brand" href="#">
+            <img class="logo" src="../../assets/navbar/Logo@2x.png" alt="">
+        </a>
+
+        <!-- ------- Toggle Button (sm) ------- -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-haspopup="true"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="col-lg-12 col-md-12 col-12 pt-sm-3 pt-md-2 pt-lg-0">
+                <ul class="list-unstyled m-0">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-md-6 col-sm-6 pl-md-2 pl-lg-3">
+                            <li>
+                                <form>
+                                    <div class="form-group form_large pt-4 pb-2 pt-lg-2 pt-sm-0">
+                                        <div class="row">
+                                            <div class="col-lg-11 col-md-10 col-sm-10 col-10 pl-sm-0 pl-md-0 pl-lg-3 pr-0">
+                                                <div class="input-group">
+
+                                                    <!-- Dropdown -->
+                                                    <div class="input-group-prepend">
+                                                        <select class="form-control navbar-dropdown">
+                                                            <option value="" data-default>All Categories</option>
+                                                            <option value="car">Car</option>
+                                                            <option value="bike">Bike</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <!-- SearchBar -->
+                                                    <input type="text" class="form-control searchBar" id="" placeholder="Search for...">
+                                                </div>
+                                            </div>
+
+                                            <!-- Search Button -->
+                                            <div class="col-lg-1 col-md-2 col-sm-2 col-2 pl-0 pr-0">
+                                                <button class="btn btn-search">
+                                                    <img class="searchIcon" src="../../assets/navbar/Search.png" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </li>
+                        </div>
+
+                        <!-- Date -->
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-4 datetime_large px-0 pl-sm-3 pr-sm-0 pr-md-0 pr-lg-3 pl-lg-4 pl-md-2 lineheight-2">
+                            <li class="pl-lg-2">
+                                <p class="mb-0 text-label d-none d-sm-block">Date</p>
+                                <p class="mb-0 text-data">24 March 2018</p>
+                            </li>
+                        </div>
+
+                        <!-- Time -->
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-4 datetime_large pr-md-0 pr-lg-3 pl-md-2 pl-lg-3 pr-0 pl-0 text-right text-sm-left text-md-left lineheight-2">
+                            <li>
+                                <p class="mb-0 text-label d-none d-sm-block">Time</p>
+                                <p class="mb-0 text-data">11 : 03 : 20 pm</p>
+                            </li>
+                        </div>
+
+                        <!-- Logout -->
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-4 btn_large text-center pr-0 pl-0 px-sm-0 px-md-1 px-lg-3 mb-2">
+                            <li>
+                                <button class="btn btn-logout pl-lg-2 pr-lg-2">
+                                    <img src="../../assets/navbar/Logout.png" alt=""> Logout
+                                </button>
+                            </li>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+
+            <!-- ------Navbar collapse sidebar Start Here ------ -->
+            <div class="col-sideNav d-block d-md-none">
+                <div class="col-lg-12 bg-darkgray h-auto">
+                    <div class="row bg-darkgray">
+
+                        <!-- ---------- Sidebar Button ---------- -->
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-10 mx-auto py-4 px-lg-0">
+                                    <a href="../add-post/add-post.html">
+                                        <button type="button" class="btn btn-addpost">Add Post</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ---------- Lists starts here ---------- -->
+                        <div class="col-lg-12 pt-lg-2 px-lg-0">
+                            <ul class="sidebar-menu list-unstyled">
+
+                                <!-------- Home ------ -->
+                                <li class="sideListItem">
+                                    <div class="col-lg-10 mx-auto p-0">
+                                        <a class="text-white text-s15 d-block" href="../home/home.html">Home</a>
+                                        <hr class="mt-2 sidebar-hr">
+                                    </div>
+                                </li>
+
+                                <!-- ------ Dashboard ------ -->
+                                <li class="sideListItem active">
+                                    <div class="col-lg-10 mx-auto p-0">
+                                        <a class="text-white text-s15 d-block" href="../dashboard/dashboard.html">Dashboard</a>
+                                        <hr class="mt-2 sidebar-hr">
+                                    </div>
+                                </li>
+
+                                <!-- ------ New post ------ -->
+                                <li class="sideListItem">
+                                    <div class="col-lg-10 mx-auto p-0">
+                                        <a class="text-white text-s15 d-block" href="../new-post/new-post.html">New post
+                                            <span class="text-s15 text-semibold text-yellow float-right">18</span>
+                                        </a>
+                                        <hr class="mt-2 sidebar-hr">
+                                    </div>
+                                </li>
+
+                                <!-- ------ New Registers ------ -->
+                                <li class="sideListItem">
+                                    <div class="col-lg-10 mx-auto p-0">
+                                        <a class="text-white text-s15 d-block" href="../new-register/new-register.html"> New Registers
+                                            <span class="text-s15 text-yellow text-semibold float-right">30</span>
+                                        </a>
+                                        <hr class="mt-2 sidebar-hr">
+                                    </div>
+                                </li>
+
+                                <!-- ------Yearly Plan ------ -->
+                                <li class="sideListItem">
+                                    <div class="col-lg-10 mx-auto p-0">
+                                        <a class="text-white text-s15 d-block" href="../plan/yearly-plan.html">Yearly Plan
+                                            <span class="text-s15 text-yellow text-semibold float-right">1554</span>
+                                        </a>
+                                        <hr class="mt-2 sidebar-hr">
+                                    </div>
+                                </li>
+
+                                <!-- ------ Monthly Plan ------ -->
+                                <li class="sideListItem">
+                                    <div class="col-lg-10 mx-auto p-0">
+                                        <a class="text-white text-s15 d-block" href="../plan/monthly-plan.html">Monthly Plan
+                                            <span class="text-s15 text-yellow text-semibold float-right">320</span>
+                                        </a>
+                                        <hr class="mt-2 sidebar-hr">
+                                    </div>
+                                </li>
+
+                                <!-- ------ Yearly Limited Plan ------ -->
+                                <li class="sideListItem">
+                                    <div class="col-lg-10 mx-auto p-0">
+                                        <a class="text-white text-s15 d-block" href="../plan/yearly-limited-plan.html">Yearly Limited Plan
+                                            <span class="text-s15 text-yellow text-semibold float-right">200</span>
+                                        </a>
+                                        <hr class="mt-2 sidebar-hr">
+                                    </div>
+                                </li>
+
+                                <!-- ------Individuals------ -->
+                                <li class="sideListItem">
+                                    <div class="col-lg-10 mx-auto p-0">
+                                        <a class="text-white text-s15 d-block" href="../plan/individuals.html">Individuals
+                                            <span class="text-s15 text-yellow text-semibold float-right">168</span>
+                                        </a>
+                                        <hr class="mt-2 sidebar-hr">
+                                    </div>
+                                </li>
+
+                                <!-- ------ Watch List------ -->
+                                <li class="sideListItem">
+                                    <div class="col-lg-10 mx-auto p-0">
+                                        <a class="text-white text-s15 d-block" href="../watchlist/watchlist.html">Watch List
+                                            <span class="text-s15 text-yellow text-semibold float-right">211</span>
+                                        </a>
+                                        <hr class="mt-2 sidebar-hr">
+                                    </div>
+                                </li>
+
+                                <!-- ------ Flagged ------ -->
+                                <li class="sideListItem">
+                                    <div class="col-lg-10 mx-auto p-0">
+                                        <a class="text-white text-s15 d-block" href="../flagged/flagged.html">Flagged
+                                            <span class="text-s15 text-yellow text-semibold float-right">168</span>
+                                        </a>
+                                        <hr class="mt-2 sidebar-hr">
+                                    </div>
+                                </li>
+
+                                <!-- ------ All Categories ------ -->
+                                <li class="sideListItem">
+                                    <div class="col-lg-10 mx-auto p-0">
+                                        <a class="text-white text-s15  d-block collapsed" data-toggle="collapse" href="#collapse-example2">All Categories
+                                            <img class="float-right sidebar-icon" src="../../assets/sidebar/up-arrow (1).png">
+                                        </a>
+                                    </div>
+                                </li>
+
+                                <!-- ------ All Categories List ------ -->
+                                <ul class="collapse list-unstyled" id="collapse-example2">
+
+                                    <!-- ------ Car ------ -->
+                                    <div class="col-lg-10 mx-auto p-0">
+                                        <hr class="mt-2 sidebar-hr">
+                                    </div>
+                                    <li class="sideListItem">
+                                        <div class="col-lg-10 mx-auto p-0">
+                                            <a class="text-white text-s15" href="../all-categories/car.html">Car</a>
+                                            <hr class="mt-2 sidebar-hr">
+                                        </div>
+                                    </li>
+
+                                    <!-- ------ Bike ------ -->
+                                    <li class="sideListItem">
+                                        <div class="col-lg-10 mx-auto p-0">
+                                            <a class="text-white text-s15" href="">Bike</a>
+                                            <hr class="mt-2 sidebar-hr">
+                                        </div>
+                                    </li>
+
+                                    <!-- ------ Number Plate------ -->
+                                    <li class="sideListItem">
+                                        <div class="col-lg-10 mx-auto p-0">
+                                            <a class="text-white text-s15" href="">Number Plate</a>
+                                            <hr class="mt-2 sidebar-hr">
+                                        </div>
+                                    </li>
+
+                                    <!-- ------ Vertu------ -->
+                                    <li class="sideListItem">
+                                        <div class="col-lg-10 mx-auto p-0">
+                                            <a class="text-white text-s15" href="">Vertu</a>
+                                            <hr class="mt-2 sidebar-hr">
+                                        </div>
+                                    </li>
+
+                                    <!-- ------ Watch -- ------>
+                                    <li class="sideListItem">
+                                        <div class="col-lg-10 mx-auto p-0">
+                                            <a class="text-white text-s15" href="">Watch</a>
+                                            <hr class="mt-2 sidebar-hr">
+                                        </div>
+                                    </li>
+
+                                    <!-- ------ Mobile Number -- ------>
+                                    <li class="sideListItem">
+                                        <div class="col-lg-10 mx-auto p-0">
+                                            <a class="text-white text-s15" href="">Mobile Number</a>
+                                            <hr class="mt-2 sidebar-hr">
+                                        </div>
+                                    </li>
+
+                                    <!-- ------ Boat ------ -->
+                                    <li class="sideListItem">
+                                        <div class="col-lg-10 mx-auto p-0">
+                                            <a class="text-white text-s15" href="">Boat</a>
+                                            <hr class="mt-2 sidebar-hr">
+                                        </div>
+                                    </li>
+
+                                    <!-- ------ Phone ------ -->
+                                    <li class="sideListItem">
+                                        <div class="col-lg-10 mx-auto p-0">
+                                            <a class="text-white text-s15" href="">Phone</a>
+                                            <hr class="mt-2 sidebar-hr">
+                                        </div>
+                                    </li>
+
+                                    <!-- ------ Properties ------ -->
+                                    <li class="sideListItem">
+                                        <div class="col-lg-10 mx-auto p-0">
+                                            <a class="text-white text-s15" href="">Properties</a>
+                                            <hr class="mt-2 sidebar-hr">
+                                        </div>
+                                    </li>
+
+                                </ul>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!-- ------------------------- NAVBAR ends ------------------------- -->
+
+    <!-- ------------------------- MAIN CONTENT ------------------------- -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="row">
+                    
+                    <!-- ------------------------- SIDEBAR starts ------------------------- -->
+                    <div class="col-sideNav bg-darkgray h-auto d-none d-md-block">
+                        <div class="col-lg-12 col-md-12 bg-darkgray h-auto">
+                            <div class="row bg-darkgray">
+
+                                <!-- ---------- Sidebar Button ---------- -->
+                                <div class="col-lg-12">
+                                    <div class="row">
+                                        <div class="col-lg-10 mx-auto py-md-4 px-lg-0">
+                                            <a href="../add-post/add-post.html">
+                                                <button type="button" class="btn btn-addpost">Add Post</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- ---------- Lists starts here ---------- -->
+                                <div class="col-lg-12 pt-lg-2 px-lg-0">
+                                    <ul class="sidebar-menu list-unstyled">
+
+                                        <!-------- Home ------ -->
+                                        <li class="sideListItem active">
+                                            <div class="col-lg-10 mx-auto p-0">
+                                                <a class="text-white text-s15 d-block" href="../home/home.html">Home</a>
+                                                <hr class="mt-2 sidebar-hr">
+                                            </div>
+                                        </li>
+
+                                        <!-- ------ Dashboard ------ -->
+                                        <li class="sideListItem">
+                                            <div class="col-lg-10 mx-auto p-0">
+                                                <a class="text-white text-s15 d-block" href="../dashboard/dashboard.html">Dashboard</a>
+                                                <hr class="mt-2 sidebar-hr">
+                                            </div>
+                                        </li>
+
+                                        <!-- ------ New post ------ -->
+                                        <li class="sideListItem">
+                                            <div class="col-lg-10 mx-auto p-0">
+                                                <a class="text-white text-s15 d-block" href="../new-post/new-post.html">New post
+                                                    <span class="text-s15 text-semibold text-yellow float-right">18</span>
+                                                </a>
+                                                <hr class="mt-2 sidebar-hr">
+                                            </div>
+                                        </li>
+
+                                        <!-- ------ New Registers ------ -->
+                                        <li class="sideListItem">
+                                            <div class="col-lg-10 mx-auto p-0">
+                                                <a class="text-white text-s15 d-block" href="../new-register/new-register.html"> New Registers
+                                                    <span class="text-s15 text-yellow text-semibold float-right">30</span>
+                                                </a>
+                                                <hr class="mt-2 sidebar-hr">
+                                            </div>
+                                        </li>
+
+                                        <!-- ------Yearly Plan ------ -->
+                                        <li class="sideListItem">
+                                            <div class="col-lg-10 mx-auto p-0">
+                                                <a class="text-white text-s15 d-block" href="../plan/yearly-plan.html">Yearly Plan
+                                                    <span class="text-s15 text-yellow text-semibold float-right">1554</span>
+                                                </a>
+                                                <hr class="mt-2 sidebar-hr">
+                                            </div>
+                                        </li>
+
+                                        <!-- ------ Monthly Plan ------ -->
+                                        <li class="sideListItem">
+                                            <div class="col-lg-10 mx-auto p-0">
+                                                <a class="text-white text-s15 d-block" href="../plan/monthly-plan.html">Monthly Plan
+                                                    <span class="text-s15 text-yellow text-semibold float-right">320</span>
+                                                </a>
+                                                <hr class="mt-2 sidebar-hr">
+                                            </div>
+                                        </li>
+
+                                        <!-- ------ Yearly Limited Plan ------ -->
+                                        <li class="sideListItem">
+                                            <div class="col-lg-10 mx-auto p-0">
+                                                <a class="text-white text-s15 d-block" href="../plan/yearly-limited-plan.html">Yearly Limited Plan
+                                                    <span class="text-s15 text-yellow text-semibold float-right">200</span>
+                                                </a>
+                                                <hr class="mt-2 sidebar-hr">
+                                            </div>
+                                        </li>
+
+                                        <!-- ------Individuals------ -->
+                                        <li class="sideListItem">
+                                            <div class="col-lg-10 mx-auto p-0">
+                                                <a class="text-white text-s15 d-block" href="../plan/individuals.html">Individuals
+                                                    <span class="text-s15 text-yellow text-semibold float-right">168</span>
+                                                </a>
+                                                <hr class="mt-2 sidebar-hr">
+                                            </div>
+                                        </li>
+
+                                        <!-- ------ Watch List------ -->
+                                        <li class="sideListItem">
+                                            <div class="col-lg-10 mx-auto p-0">
+                                                <a class="text-white text-s15 d-block" href="../watchlist/watchlist.html">Watch List
+                                                    <span class="text-s15 text-yellow text-semibold float-right">211</span>
+                                                </a>
+                                                <hr class="mt-2 sidebar-hr">
+                                            </div>
+                                        </li>
+
+                                        <!-- ------ Flagged ------ -->
+                                        <li class="sideListItem">
+                                            <div class="col-lg-10 mx-auto p-0">
+                                                <a class="text-white text-s15 d-block" href="../flagged/flagged.html">Flagged
+                                                    <span class="text-s15 text-yellow text-semibold float-right">168</span>
+                                                </a>
+                                                <hr class="mt-2 sidebar-hr">
+                                            </div>
+                                        </li>
+
+                                        <!-- ------ All Categories ------ -->
+                                        <li class="sideListItem">
+                                            <div class="col-lg-10 mx-auto p-0">
+                                                <a class="text-white text-s15 d-block collapsed" data-toggle="collapse" href="#collapse-example">All Categories
+                                                    <img class="float-right sidebar-icon" src="../../assets/sidebar/up-arrow (1).png">
+                                                </a>
+                                            </div>
+                                        </li>
+
+                                        <!-- ------ Sublist : All Categories List ------ -->
+                                        <ul class="collapse list-unstyled" id="collapse-example">
+
+                                            <div class="col-lg-10 mx-auto p-0">
+                                                <hr class="mt-2 sidebar-hr">
+                                            </div>
+
+                                            <!-- ------ Car ------ -->
+                                            <li class="sideListItem">
+                                                <div class="col-lg-10 mx-auto p-0">
+                                                    <a class="text-white text-s15" href="../all-categories/car.html">Car</a>
+                                                    <hr class="mt-2 sidebar-hr">
+                                                </div>
+                                            </li>
+
+                                            <!-- ------ Bike ------ -->
+                                            <li class="sideListItem">
+                                                <div class="col-lg-10 mx-auto p-0">
+                                                    <a class="text-white text-s15" href="">Bike</a>
+                                                    <hr class="mt-2 sidebar-hr">
+                                                </div>
+                                            </li>
+
+                                            <!-- ------ Number Plate------ -->
+                                            <li class="sideListItem">
+                                                <div class="col-lg-10 mx-auto p-0">
+                                                    <a class="text-white text-s15" href="">Number Plate</a>
+                                                    <hr class="mt-2 sidebar-hr">
+                                                </div>
+                                            </li>
+
+                                            <!-- ------ Vertu------ -->
+                                            <li class="sideListItem">
+                                                <div class="col-lg-10 mx-auto p-0">
+                                                    <a class="text-white text-s15" href="">Vertu</a>
+                                                    <hr class="mt-2 sidebar-hr">
+                                                </div>
+                                            </li>
+
+                                            <!-- ------ Watch -- ------>
+                                            <li class="sideListItem">
+                                                <div class="col-lg-10 mx-auto p-0">
+                                                    <a class="text-white text-s15" href="">Watch</a>
+                                                    <hr class="mt-2 sidebar-hr">
+                                                </div>
+                                            </li>
+
+                                            <!-- ------ Mobile Number -- ------>
+                                            <li class="sideListItem">
+                                                <div class="col-lg-10 mx-auto p-0">
+                                                    <a class="text-white text-s15" href="">Mobile Number</a>
+                                                    <hr class="mt-2 sidebar-hr">
+                                                </div>
+                                            </li>
+
+                                            <!-- ------ Boat ------ -->
+                                            <li class="sideListItem">
+                                                <div class="col-lg-10 mx-auto p-0">
+                                                    <a class="text-white text-s15" href="">Boat</a>
+                                                    <hr class="mt-2 sidebar-hr">
+                                                </div>
+                                            </li>
+
+                                            <!-- ------ Phone ------ -->
+                                            <li class="sideListItem">
+                                                <div class="col-lg-10 mx-auto p-0">
+                                                    <a class="text-white text-s15" href="">Phone</a>
+                                                    <hr class="mt-2 sidebar-hr">
+                                                </div>
+                                            </li>
+
+                                            <!-- ------ Properties ------ -->
+                                            <li class="sideListItem">
+                                                <div class="col-lg-10 mx-auto p-0">
+                                                    <a class="text-white text-s15" href="">Properties</a>
+                                                    <hr class="mt-2 sidebar-hr">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <!-- /.Sublist -->
+                                    </ul>
+                                </div>
+                                <!-- /.list ends -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ------------------------- SIDEBAR ends ------------------------- -->
+
+                    <!-- ------------------------- BODY starts ------------------------- -->
+                    <div class="col-main">
+                        <div class="col-lg-12">
+                            <!-- -------- Title -------- -->
+                            <h4 class="page-title mt-4 mb-2 pb-2 pt-2">Home</h4>
+
+                            <div class="row">
+                                <div class="col-lg-12">
+
+                                    <!-- ------------------ Tabs & Body ------------------------ -->
+                                    <div class="col-lg-12">
+
+                                        <!-- ------------------ Tabs ------------------------ -->
+                                        <ul class="nav nav-tabs justify-content-center" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link allPost active" id="allPost-tab" data-toggle="tab" href="#allPost" role="tab" aria-controls="allPost"
+                                                    aria-selected="true">All Post &nbsp; 30
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link booked" id="booked-tab" data-toggle="tab" href="#booked" role="tab" aria-controls="booked" aria-selected="false">Booked &nbsp;&nbsp; 5
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link sold" id="sold-tab" data-toggle="tab" href="#sold" role="tab" aria-controls="sold" aria-selected="false">Sold &nbsp;&nbsp; 5
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link cart" id="cart-tab" data-toggle="tab" href="#cart" role="tab" aria-controls="cart" aria-selected="false">Cart &nbsp;&nbsp; 8
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                        <!-- ------------------ Body ------------------ -->
+                                        <div class="tab-content mb-lg-5">
+
+                                            <!-- ------------------ Table : AllPost ------------------------ -->
+                                            <div class="tab-pane fade show active" id="allPost" role="tabpanel" aria-labelledby="allPost-tab">
+                                                <div class="col-lg-12">
+                                                    <div class="col-lg-12 mt-4">
+                                                        <div class="row">
+
+                                                            <!-- -------- Single Card -------- -->
+                                                            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                                                                <div class="row">
+                                                                    <div class="card card-product">
+                                                                        <div class="col-lg-12 col-12">
+
+                                                                            <!-- Card Image -->
+                                                                            <div class="row">
+                                                                                <img class="card-image" src="../../assets/images/car/car11.jpg" alt="">
+                                                                            </div>
+
+                                                                            <!-- Card Body -->
+                                                                            <div class="row bbr-card" style="background-color: #F2F2F2;">
+                                                                                <div class="col-lg-12 col-12">
+
+                                                                                    <!-- Product -->
+                                                                                    <div class="row mt-2">
+                                                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-4 pr-lg-3 pr-0">
+                                                                                            <p class="mb-0 text-s13" style="color: #676767;">Product</p>
+                                                                                        </div>
+                                                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-8 pl-0">
+                                                                                            <p class="mb-0 text-s13 text-semibold" style="color: #262626;">Audi Q7</p>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                    <!-- Price -->
+                                                                                    <div class="row">
+                                                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                                                                                            <p class="mb-0 text-s13" style="color: #676767;">Price</p>
+                                                                                        </div>
+                                                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-8 pl-0">
+                                                                                            <p class="mb-0 text-s13 text-semibold" style="color: #262626;">AED 142357</p>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                    <div class="row">
+                                                                                        <div class="col-lg-12 col-12 p-1">
+                                                                                            <hr class="m-2">
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                    <!-- Footer -->
+                                                                                    <div class="row mb-2">
+                                                                                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 text-left">
+                                                                                            <p class="mb-0 text-s13" style="color: #676767;">11 Nov. 2017</p>
+                                                                                        </div>
+                                                                                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 text-right">
+                                                                                            <p class="mb-0 text-s13 text-semibold" style="color: #262626;">112 Views</p>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <!-- /.card body -->
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- ./End of a single card -->
+
+                                                            <!-- // TODO: Remove Remaining -->
+                                                            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                                                                <div class="row">
+                                                                    <div class="card card-product">
+                                                                        <div class="col-lg-12 col-12">
+
+                                                                            <!-- Card Image -->
+                                                                            <div class="row">
+                                                                                <img class="card-image" src="../../assets/images/car/car11.jpg" alt="">
+                                                                            </div>
+
+                                                                            <!-- Card Body -->
+                                                                            <div class="row bbr-card" style="background-color: #F2F2F2;">
+                                                                                <div class="col-lg-12 col-12">
+
+                                                                                    <!-- Product -->
+                                                                                    <div class="row mt-2">
+                                                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-4 pr-lg-3 pr-0">
+                                                                                            <p class="mb-0 text-s13" style="color: #676767;">Product</p>
+                                                                                        </div>
+                                                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-8 pl-0">
+                                                                                            <p class="mb-0 text-s13 text-semibold" style="color: #262626;">Audi Q7</p>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                    <!-- Price -->
+                                                                                    <div class="row">
+                                                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                                                                                            <p class="mb-0 text-s13" style="color: #676767;">Price</p>
+                                                                                        </div>
+                                                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-8 pl-0">
+                                                                                            <p class="mb-0 text-s13 text-semibold" style="color: #262626;">AED 142357</p>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                    <div class="row">
+                                                                                        <div class="col-lg-12 col-12 p-1">
+                                                                                            <hr class="m-2">
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                    <!-- Footer -->
+                                                                                    <div class="row mb-2">
+                                                                                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 text-left">
+                                                                                            <p class="mb-0 text-s13" style="color: #676767;">11 Nov. 2017</p>
+                                                                                        </div>
+                                                                                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 text-right">
+                                                                                            <p class="mb-0 text-s13 text-semibold" style="color: #262626;">112 Views</p>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <!-- /.card body -->
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                                                                <div class="row">
+                                                                    <div class="card card-product">
+                                                                        <div class="col-lg-12 col-12">
+                                                                            <div class="row">
+                                                                                <img class="card-image" src="../../assets/images/car/car11.jpg" alt="">
+                                                                                <button class="bookedBtn">Booked</button>
+                                                                            </div>
+                                                                            <div class="row bbr-card" style="background-color: #F2F2F2;">
+                                                                                <div class="col-lg-12 col-12">
+                                                                                    <div class="row mt-2">
+                                                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-4 pr-lg-3 pr-0">
+                                                                                            <p class="mb-0 text-s13" style="color: #676767;">Product</p>
+                                                                                        </div>
+                                                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-8 pl-0">
+                                                                                            <p class="mb-0 text-s13 text-semibold" style="color: #262626;">Audi Q7</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="row">
+                                                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                                                                                            <p class="mb-0 text-s13" style="color: #676767;">Price</p>
+                                                                                        </div>
+                                                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-8 pl-0">
+                                                                                            <p class="mb-0 text-s13 text-semibold" style="color: #262626;">AED 142357</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="row">
+                                                                                        <div class="col-lg-12 p-1">
+                                                                                            <hr class="m-2">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="row mb-2">
+                                                                                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 text-left">
+                                                                                            <p class="mb-0 text-s13" style="color: #676767;">11 Nov. 2017</p>
+                                                                                        </div>
+                                                                                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 text-right">
+                                                                                            <p class="mb-0 text-s13 text-semibold" style="color: #262626;">112 Views</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                                                                <div class="row">
+                                                                    <div class="card card-product">
+                                                                        <div class="col-lg-12 col-12">
+                                                                            <div class="row">
+                                                                                <img class="card-image" src="../../assets/images/car/car11.jpg" alt="">
+                                                                            </div>
+                                                                            <div class="row bbr-card" style="background-color: #F2F2F2;">
+                                                                                <div class="col-lg-12 col-12">
+                                                                                    <div class="row mt-2">
+                                                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-4 pr-lg-3 pr-0">
+                                                                                            <p class="mb-0 text-s13" style="color: #676767;">Product</p>
+                                                                                        </div>
+                                                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-8 pl-0">
+                                                                                            <p class="mb-0 text-s13 text-semibold" style="color: #262626;">Audi Q7</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="row">
+                                                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                                                                                            <p class="mb-0 text-s13" style="color: #676767;">Price</p>
+                                                                                        </div>
+                                                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-8 pl-0">
+                                                                                            <p class="mb-0 text-s13 text-semibold" style="color: #262626;">AED 142357</p>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                    <div class="row">
+                                                                                        <div class="col-lg-12 col-12 p-1">
+                                                                                            <hr class="m-2">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="row mb-2">
+                                                                                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 text-left">
+                                                                                            <p class="mb-0 text-s13" style="color: #676767;">11 Nov. 2017</p>
+                                                                                        </div>
+                                                                                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 text-right">
+                                                                                            <p class="mb-0 text-s13 text-semibold" style="color: #262626;">112 Views</p>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                                                                <div class="row">
+                                                                    <div class="card card-product">
+                                                                        <div class="col-lg-12 col-12">
+                                                                            <div class="row">
+                                                                                <img class="card-image" src="../../assets/images/car/car11.jpg" alt="">
+                                                                                <!-- Booked -->
+                                                                                <button class="bookedBtn">Booked</button>
+                                                                            </div>
+                                                                            <div class="row bbr-card" style="background-color: #F2F2F2;">
+                                                                                <div class="col-lg-12 col-12">
+                                                                                    <div class="row mt-2">
+                                                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-4 pr-lg-3 pr-0">
+                                                                                            <p class="mb-0 text-s13" style="color: #676767;">Product</p>
+                                                                                        </div>
+                                                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-8 pl-0">
+                                                                                            <p class="mb-0 text-s13 text-semibold" style="color: #262626;">Audi Q7</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="row">
+                                                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                                                                                            <p class="mb-0 text-s13" style="color: #676767;">Price</p>
+                                                                                        </div>
+                                                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-8 pl-0">
+                                                                                            <p class="mb-0 text-s13 text-semibold" style="color: #262626;">AED 142357</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="row">
+                                                                                        <div class="col-lg-12 p-1">
+                                                                                            <hr class="m-2">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="row mb-2">
+                                                                                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 text-left">
+                                                                                            <p class="mb-0 text-s13" style="color: #676767;">11 Nov. 2017</p>
+                                                                                        </div>
+                                                                                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 text-right">
+                                                                                            <p class="mb-0 text-s13 text-semibold" style="color: #262626;">112 Views</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                                                                <div class="row">
+                                                                    <div class="card card-product">
+                                                                        <div class="col-lg-12 col-12">
+                                                                            <div class="row">
+                                                                                <img class="card-image" src="../../assets/images/car/car11.jpg" alt="">
+                                                                            </div>
+                                                                            <div class="row bbr-card" style="background-color: #F2F2F2;">
+                                                                                <div class="col-lg-12 col-12">
+                                                                                    <div class="row mt-2">
+                                                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-4 pr-lg-3 pr-0">
+                                                                                            <p class="mb-0 text-s13" style="color: #676767;">Product</p>
+                                                                                        </div>
+                                                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-8 pl-0">
+                                                                                            <p class="mb-0 text-s13 text-semibold" style="color: #262626;">Audi Q7</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="row">
+                                                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                                                                                            <p class="mb-0 text-s13" style="color: #676767;">Price</p>
+                                                                                        </div>
+                                                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-8 pl-0">
+                                                                                            <p class="mb-0 text-s13 text-semibold" style="color: #262626;">AED 142357</p>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                    <div class="row">
+                                                                                        <div class="col-lg-12 col-12 p-1">
+                                                                                            <hr class="m-2">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="row mb-2">
+                                                                                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 text-left">
+                                                                                            <p class="mb-0 text-s13" style="color: #676767;">11 Nov. 2017</p>
+                                                                                        </div>
+                                                                                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 text-right">
+                                                                                            <p class="mb-0 text-s13 text-semibold" style="color: #262626;">112 Views</p>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                                                                <div class="row">
+                                                                    <div class="card card-product">
+                                                                        <div class="col-lg-12 col-12">
+                                                                            <div class="row">
+                                                                                <img class="card-image" src="../../assets/images/car/car11.jpg" alt="">
+                                                                                <button class="bookedBtn">Booked</button>
+                                                                            </div>
+                                                                            <div class="row bbr-card" style="background-color: #F2F2F2;">
+                                                                                <div class="col-lg-12 col-12">
+                                                                                    <div class="row mt-2">
+                                                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-4 pr-lg-3 pr-0">
+                                                                                            <p class="mb-0 text-s13" style="color: #676767;">Product</p>
+                                                                                        </div>
+                                                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-8 pl-0">
+                                                                                            <p class="mb-0 text-s13 text-semibold" style="color: #262626;">Audi Q7</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="row">
+                                                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                                                                                            <p class="mb-0 text-s13" style="color: #676767;">Price</p>
+                                                                                        </div>
+                                                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-8 pl-0">
+                                                                                            <p class="mb-0 text-s13 text-semibold" style="color: #262626;">AED 142357</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="row">
+                                                                                        <div class="col-lg-12 p-1">
+                                                                                            <hr class="m-2">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="row mb-2">
+                                                                                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 text-left">
+                                                                                            <p class="mb-0 text-s13" style="color: #676767;">11 Nov. 2017</p>
+                                                                                        </div>
+                                                                                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 text-right">
+                                                                                            <p class="mb-0 text-s13 text-semibold" style="color: #262626;">112 Views</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                                                                <div class="row">
+                                                                    <div class="card card-product">
+                                                                        <div class="col-lg-12 col-12">
+                                                                            <div class="row">
+                                                                                <img class="card-image" src="../../assets/images/car/car11.jpg" alt="">
+                                                                            </div>
+                                                                            <div class="row bbr-card" style="background-color: #F2F2F2;">
+                                                                                <div class="col-lg-12 col-12">
+                                                                                    <div class="row mt-2">
+                                                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-4 pr-lg-3 pr-0">
+                                                                                            <p class="mb-0 text-s13" style="color: #676767;">Product</p>
+                                                                                        </div>
+                                                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-8 pl-0">
+                                                                                            <p class="mb-0 text-s13 text-semibold" style="color: #262626;">Audi Q7</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="row">
+                                                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                                                                                            <p class="mb-0 text-s13" style="color: #676767;">Price</p>
+                                                                                        </div>
+                                                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-8 pl-0">
+                                                                                            <p class="mb-0 text-s13 text-semibold" style="color: #262626;">AED 142357</p>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                    <div class="row">
+                                                                                        <div class="col-lg-12 col-12 p-1">
+                                                                                            <hr class="m-2">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="row mb-2">
+                                                                                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 text-left">
+                                                                                            <p class="mb-0 text-s13" style="color: #676767;">11 Nov. 2017</p>
+                                                                                        </div>
+                                                                                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 text-right">
+                                                                                            <p class="mb-0 text-s13 text-semibold" style="color: #262626;">112 Views</p>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                                                                <div class="row">
+                                                                    <div class="card card-product">
+                                                                        <div class="col-lg-12 col-12">
+                                                                            <div class="row">
+                                                                                <img class="card-image" src="../../assets/images/car/car11.jpg" alt="">
+                                                                            </div>
+                                                                            <div class="row bbr-card" style="background-color: #F2F2F2;">
+                                                                                <div class="col-lg-12 col-12">
+                                                                                    <div class="row mt-2">
+                                                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-4 pr-lg-3 pr-0">
+                                                                                            <p class="mb-0 text-s13" style="color: #676767;">Product</p>
+                                                                                        </div>
+                                                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-8 pl-0">
+                                                                                            <p class="mb-0 text-s13 text-semibold" style="color: #262626;">Audi Q7</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="row">
+                                                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                                                                                            <p class="mb-0 text-s13" style="color: #676767;">Price</p>
+                                                                                        </div>
+                                                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-8 pl-0">
+                                                                                            <p class="mb-0 text-s13 text-semibold" style="color: #262626;">AED 142357</p>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                    <div class="row">
+                                                                                        <div class="col-lg-12 col-12 p-1">
+                                                                                            <hr class="m-2">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="row mb-2">
+                                                                                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 text-left">
+                                                                                            <p class="mb-0 text-s13" style="color: #676767;">11 Nov. 2017</p>
+                                                                                        </div>
+                                                                                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 text-right">
+                                                                                            <p class="mb-0 text-s13 text-semibold" style="color: #262626;">112 Views</p>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- ------------------ Table : Booked ------------------------ -->
+                                            <div class="tab-pane fade" id="booked" role="tabpanel" aria-labelledby="booked-tab">
+                                                <div class="col-lg-12">
+                                                    <div class="col-lg-12 mt-4">
+                                                        <div class="row">
+
+                                                            <!-- -------- Single Card -------- -->
+                                                            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                                                                <div class="row">
+                                                                    <div class="card card-product">
+                                                                        <div class="col-lg-12 col-12">
+
+                                                                            <!-- Card Image -->
+                                                                            <div class="row">
+                                                                                <img class="card-image" src="../../assets/images/car/car10.jpg" alt="">
+
+                                                                                <!-- Booked Button -->
+                                                                                <button class="bookedBtn">Booked</button>
+                                                                            </div>
+
+                                                                            <!-- Card Body -->
+                                                                            <div class="row bbr-card" style="background-color: #F2F2F2;">
+                                                                                <div class="col-lg-12 col-12">
+
+                                                                                    <!-- Product -->
+                                                                                    <div class="row mt-2">
+                                                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-4 pr-lg-3 pr-0">
+                                                                                            <p class="mb-0 text-s13" style="color: #676767;">Product</p>
+                                                                                        </div>
+                                                                                        <div class="col-lg-8 col-md-8 cpl-sm-8 col-8 pl-0">
+                                                                                            <p class="mb-0 text-s13 text-semibold" style="color: #262626;">Audi Q7</p>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                    <!-- Price -->
+                                                                                    <div class="row">
+                                                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                                                                                            <p class="mb-0 text-s13" style="color: #676767;">Price</p>
+                                                                                        </div>
+                                                                                        <div class="col-lg-8 col-md-8 cpl-sm-8 col-8  pl-0">
+                                                                                            <p class="mb-0 text-s13 text-semibold" style="color: #262626;">AED 142357</p>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                    <div class="row">
+                                                                                        <div class="col-lg-12 col-12 p-1">
+                                                                                            <hr class="m-2">
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                    <!-- Footer -->
+                                                                                    <div class="row mb-2">
+                                                                                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 text-left">
+                                                                                            <p class="mb-0 text-s13" style="color: #676767;">11 Nov. 2017</p>
+                                                                                        </div>
+                                                                                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 text-right">
+                                                                                            <p class="mb-0 text-s13 text-semibold" style="color: #262626;">112 Views</p>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <!-- /.card body -->
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- ./End of a single card -->
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- ------------------ Table : Sold ------------------------ -->
+                                            <div class="tab-pane fade" id="sold" role="tabpanel" aria-labelledby="sold-tab">
+                                                <div class="col-lg-12 col-12">
+                                                    <div class="col-lg-12 col-12 mt-4">
+                                                        <div class="row">
+
+                                                            <!-- -------- Single Card -------- -->
+                                                            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                                                                <div class="row">
+                                                                    <div class="card card-product">
+                                                                        <div class="col-lg-12 col-12">
+
+                                                                            <!-- Card Image -->
+                                                                            <div class="row">
+                                                                                <img class="card-image" src="../../assets/images/car/car7.jpg" alt="">
+                                                                            </div>
+
+                                                                            <!-- Card Body -->
+                                                                            <div class="row bbr-card" style="background-color: #F2F2F2;">
+                                                                                <div class="col-lg-12 col-12">
+
+                                                                                    <!-- Product -->
+                                                                                    <div class="row mt-2">
+                                                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-4 pr-lg-3 pr-0">
+                                                                                            <p class="mb-0 text-s13" style="color: #676767;">Product</p>
+                                                                                        </div>
+                                                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-8 pl-0">
+                                                                                            <p class="mb-0 text-s13 text-semibold" style="color: #262626;">Audi Q7</p>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                    <!-- Price -->
+                                                                                    <div class="row">
+                                                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                                                                                            <p class="mb-0 text-s13" style="color: #676767;">Price</p>
+                                                                                        </div>
+                                                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-8  pl-0">
+                                                                                            <p class="mb-0 text-s13 text-semibold" style="color: #262626;">AED 142357</p>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                    <div class="row">
+                                                                                        <div class="col-lg-12 col-12 p-1">
+                                                                                            <hr class="mt-2 mb-0 ml-2 mr-2">
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                    <!-- Footer -->
+                                                                                    <div class="row mb-1">
+                                                                                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 text-left mt-2">
+                                                                                            <p class="mb-0 text-s13" style="color: #676767;">11 Nov. 2017</p>
+                                                                                        </div>
+
+                                                                                        <!-- Remove Button -->
+                                                                                        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                                                                                            <button class="btn btn-orange w-100 text-s13 pt-1 pb-1">Remove</button>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <!-- /.card body -->
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- ./End of a single card -->
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- ------------------ Table : Cart ------------------------ -->
+                                            <div class="tab-pane fade" id="cart" role="tabpanel" aria-labelledby="cart-tab">
+                                                <div class="col-lg-12">
+                                                    <div class="col-lg-12 col-12 mt-4">
+                                                        <div class="row">
+
+                                                            <!-- -------- Single Card -------- -->
+                                                            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                                                                <div class="row">
+                                                                    <div class="card card-product">
+                                                                        <div class="col-lg-12 col-12">
+
+                                                                            <!-- Card Image -->
+                                                                            <div class="row">
+                                                                                <img class="card-image" src="../../assets/images/car/car3.jpg" alt="">
+                                                                            </div>
+
+                                                                            <!-- Card Body -->
+                                                                            <div class="row bbr-card" style="background-color: #F2F2F2;">
+                                                                                <div class="col-lg-12 col-12">
+
+                                                                                    <!-- Product -->
+                                                                                    <div class="row mt-2">
+                                                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-4 pr-lg-3 pr-0">
+                                                                                            <p class="mb-0 text-s13" style="color: #676767;">Product</p>
+                                                                                        </div>
+                                                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-8 pl-0">
+                                                                                            <p class="mb-0 text-s13 text-semibold" style="color: #262626;">Audi Q7</p>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                    <!-- Price -->
+                                                                                    <div class="row">
+                                                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                                                                                            <p class="mb-0 text-s13" style="color: #676767;">Price</p>
+                                                                                        </div>
+                                                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-8 pl-0">
+                                                                                            <p class="mb-0 text-s13 text-semibold" style="color: #262626;">AED 142357</p>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                    <div class="row">
+                                                                                        <div class="col-lg-12 col-12 p-1">
+                                                                                            <hr class="mt-2 mb-0 ml-2 mr-2">
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                    <!-- Footer -->
+                                                                                    <div class="row mb-1">
+                                                                                        <div class="col-lg-6 col-md-6 col-sm-6 col-6 text-left">
+                                                                                            <p class="mb-0 text-s13" style="color: #676767;">11 Nov. 2017</p>
+                                                                                        </div>
+
+                                                                                        <!-- Remove Button -->
+                                                                                        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                                                                                            <button class="btn btn-orange w-100 text-s13 pt-1 pb-1">Remove</button>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+                                                                            </div>
+                                                                            <!-- /.card body -->
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- ./End of a single card -->
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- /.Tabs and body -->
+
+                                </div>
+                            </div>
+                            <!-- /row -->
+                        </div>
+                    </div>
+                    <!-- ------------------------- BODY ends ------------------------- -->
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- ------------------------- MAIN CONTENT ------------------------- -->
+
+
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

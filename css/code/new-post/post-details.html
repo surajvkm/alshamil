@@ -1,0 +1,777 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- -------- Icon -------- -->
+    <link rel="icon" type="image/x-icon" href="../../assets/favicon.ico">
+
+    <!-- -------- Title -------- -->
+    <title>Al-Shamil</title>
+
+    <!-- -------- Bootstrap CSS -------- -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <!-- -------- Custom CSS -------- -->
+    <!-- For global styles -->
+    <link rel="stylesheet" href="../../styles.css">
+    <!-- For Sidebar and Navbar -->
+    <link rel="stylesheet" href="../default.css">
+    <!-- Each PAGE CSS -->
+    <link rel="stylesheet" href="./new-post.css">
+
+</head>
+
+<body>
+
+    <!-- ------------------------- NAVBAR starts ------------------------- -->
+    <nav class="navbar navbar-expand-md navbar-light p-md-3 p-1">
+
+        <!-- ------- Logo ------- -->
+        <a class="navbar-brand" href="#">
+            <img class="logo" src="../../assets/navbar/Logo@2x.png" alt="Logo">
+        </a>
+
+        <!-- ------- Toggle Button (sm) ------- -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapseContent" aria-haspopup="true"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- ------- The Content inside Navbar(for all screens except sm) / toggle button (sm) ------- -->
+        <div class="collapse navbar-collapse" id="navbarCollapseContent">
+
+            <div class="col-lg-12 col-md-12 col-12 pt-sm-3 pt-md-2 pt-lg-0">
+                <!-- Navbar List -->
+                <ul class="list-unstyled m-0">
+                    <div class="row">
+
+                        <!-- Forms -->
+                        <div class="col-lg-6 col-md-6 col-sm-6 pl-md-2 pl-lg-3">
+                            <li>
+                                <!-- Search form starts here -->
+                                <form>
+                                    <div class="form-group form_large pt-4 pb-2 pt-lg-2 pt-sm-0">
+                                        <div class="row">
+                                            <div class="col-lg-11 col-md-10 col-sm-10 col-10 pl-sm-0 pl-md-0 pl-lg-3 pr-0">
+                                                <div class="input-group">
+
+                                                    <!-- Dropdown -->
+                                                    <div class="input-group-prepend">
+                                                        <select class="form-control navbar-dropdown">
+                                                            <option value="" data-default>All Categories</option>
+                                                            <option value="car">Car</option>
+                                                            <option value="bike">Bike</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <!-- SearchBar -->
+                                                    <input type="text" class="form-control searchBar" placeholder="Search for...">
+                                                </div>
+                                            </div>
+
+                                            <!-- Search Button -->
+                                            <div class="col-lg-1 col-md-2 col-sm-2 col-2 pl-0 pr-0">
+                                                <button class="btn btn-search">
+                                                    <img class="searchIcon" src="../../assets/navbar/Search.png" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                                <!-- /.search ends here -->
+                            </li>
+                        </div>
+                        <!-- /.forms -->
+
+                        <!-- Date -->
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-4 datetime_large px-0 pl-sm-3 pr-sm-0 pr-md-0 pr-lg-3 pl-lg-4 pl-md-2 lineheight-2">
+                            <li class="pl-lg-2">
+                                <p class="mb-0 text-label d-none d-sm-block">Date</p>
+                                <p class="mb-0 text-data">24 March 2018</p>
+                            </li>
+                        </div>
+
+                        <!-- Time -->
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-4 datetime_large pr-md-0 pr-lg-3 pl-md-2 pl-lg-3 pr-0 pl-0 text-right text-sm-left text-md-left lineheight-2">
+                            <li>
+                                <p class="mb-0 text-label d-none d-sm-block">Time</p>
+                                <p class="mb-0 text-data">11 : 03 : 20 pm</p>
+                            </li>
+                        </div>
+
+                        <!-- Logout -->
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-4 btn_large text-center pr-0 pl-0 px-sm-0 px-md-1 px-lg-3 mb-2">
+                            <li>
+                                <button class="btn btn-logout pl-lg-2 pr-lg-2">
+                                    <img src="../../assets/navbar/Logout.png" alt=""> Logout
+                                </button>
+                            </li>
+                        </div>
+                    </div>
+                </ul>
+                <!-- /.navbar list -->
+            </div>
+
+            <!-- ------ Sidebar inside navbar collapse starts here (This only displays in sm) ------ -->
+            <div class="col-sideNav d-block d-md-none">
+                <div class="col-lg-12 bg-darkgray h-auto">
+                    <div class="row bg-darkgray">
+
+                        <!-- ---------- AddPost Button ---------- -->
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-10 mx-auto py-4 px-lg-0">
+                                    <a href="../add-post/add-post.html">
+                                        <button type="button" class="btn btn-addpost">Add Post</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ---------- Lists starts here ---------- -->
+                        <div class="col-lg-12 pt-lg-2 px-lg-0">
+                            <ul class="sidebar-menu list-unstyled">
+
+                                <!-------- Home ------ -->
+                                <li class="sideListItem">
+                                    <div class="col-lg-10 mx-auto p-0">
+                                        <a class="text-white text-s15 d-block" href="../home/home.html">Home</a>
+                                        <hr class="mt-2 sidebar-hr">
+                                    </div>
+                                </li>
+
+                                <!-- ------ Dashboard ------ -->
+                                <li class="sideListItem">
+                                    <div class="col-lg-10 mx-auto p-0">
+                                        <a class="text-white text-s15 d-block" href="../dashboard/dashboard.html">Dashboard</a>
+                                        <hr class="mt-2 sidebar-hr">
+                                    </div>
+                                </li>
+
+                                <!-- ------ New post ------ -->
+                                <li class="sideListItem">
+                                    <div class="col-lg-10 mx-auto p-0">
+                                        <a class="text-white text-s15 d-block" href="../new-post/new-post.html">New post
+                                            <span class="text-s15 text-semibold text-yellow float-right">18</span>
+                                        </a>
+                                        <hr class="mt-2 sidebar-hr">
+                                    </div>
+                                </li>
+
+                                <!-- ------ New Registers ------ -->
+                                <li class="sideListItem">
+                                    <div class="col-lg-10 mx-auto p-0">
+                                        <a class="text-white text-s15 d-block" href="../new-register/new-register.html"> New Registers
+                                            <span class="text-s15 text-yellow text-semibold float-right">30</span>
+                                        </a>
+                                        <hr class="mt-2 sidebar-hr">
+                                    </div>
+                                </li>
+
+                                <!-- ------Yearly Plan ------ -->
+                                <li class="sideListItem">
+                                    <div class="col-lg-10 mx-auto p-0">
+                                        <a class="text-white text-s15 d-block" href="../plan/yearly-plan.html">Yearly Plan
+                                            <span class="text-s15 text-yellow text-semibold float-right">1554</span>
+                                        </a>
+                                        <hr class="mt-2 sidebar-hr">
+                                    </div>
+                                </li>
+
+                                <!-- ------ Monthly Plan ------ -->
+                                <li class="sideListItem">
+                                    <div class="col-lg-10 mx-auto p-0">
+                                        <a class="text-white text-s15 d-block" href="../plan/monthly-plan.html">Monthly Plan
+                                            <span class="text-s15 text-yellow text-semibold float-right">320</span>
+                                        </a>
+                                        <hr class="mt-2 sidebar-hr">
+                                    </div>
+                                </li>
+
+                                <!-- ------ Yearly Limited Plan ------ -->
+                                <li class="sideListItem">
+                                    <div class="col-lg-10 mx-auto p-0">
+                                        <a class="text-white text-s15 d-block" href="../plan/yearly-limited-plan.html">Yearly Limited Plan
+                                            <span class="text-s15 text-yellow text-semibold float-right">200</span>
+                                        </a>
+                                        <hr class="mt-2 sidebar-hr">
+                                    </div>
+                                </li>
+
+                                <!-- ------Individuals------ -->
+                                <li class="sideListItem">
+                                    <div class="col-lg-10 mx-auto p-0">
+                                        <a class="text-white text-s15 d-block" href="../plan/individuals.html">Individuals
+                                            <span class="text-s15 text-yellow text-semibold float-right">168</span>
+                                        </a>
+                                        <hr class="mt-2 sidebar-hr">
+                                    </div>
+                                </li>
+
+                                <!-- ------ Watch List------ -->
+                                <li class="sideListItem">
+                                    <div class="col-lg-10 mx-auto p-0">
+                                        <a class="text-white text-s15 d-block" href="../watchlist/watchlist.html">Watch List
+                                            <span class="text-s15 text-yellow text-semibold float-right">211</span>
+                                        </a>
+                                        <hr class="mt-2 sidebar-hr">
+                                    </div>
+                                </li>
+
+                                <!-- ------ Flagged ------ -->
+                                <li class="sideListItem">
+                                    <div class="col-lg-10 mx-auto p-0">
+                                        <a class="text-white text-s15 d-block" href="../flagged/flagged.html">Flagged
+                                            <span class="text-s15 text-yellow text-semibold float-right">168</span>
+                                        </a>
+                                        <hr class="mt-2 sidebar-hr">
+                                    </div>
+                                </li>
+
+                                <!-- ------ All Categories ------ -->
+                                <li class="sideListItem">
+                                    <div class="col-lg-10 mx-auto p-0">
+                                        <a class="text-white text-s15 d-block collapsed" data-toggle="collapse" href="#collapse-example2">All Categories
+                                            <img class="float-right sidebar-icon" src="../../assets/sidebar/up-arrow (1).png">
+                                        </a>
+                                    </div>
+                                </li>
+
+                                <!-- ------ Sublist : All Categories ------ -->
+                                <ul class="collapse list-unstyled" id="collapse-example2">
+                                    <div class="col-lg-10 mx-auto p-0">
+                                        <hr class="mt-2 sidebar-hr">
+                                    </div>
+
+                                    <!-- ------ Car ------ -->
+                                    <li class="sideListItem">
+                                        <div class="col-lg-10 mx-auto p-0">
+                                            <a class="text-white text-s15" href="../all-categories/car.html">Car</a>
+                                            <hr class="mt-2 sidebar-hr">
+                                        </div>
+                                    </li>
+
+                                    <!-- ------ Bike ------ -->
+                                    <li class="sideListItem">
+                                        <div class="col-lg-10 mx-auto p-0">
+                                            <a class="text-white text-s15" href="">Bike</a>
+                                            <hr class="mt-2 sidebar-hr">
+                                        </div>
+                                    </li>
+
+                                    <!-- ------ Number Plate------ -->
+                                    <li class="sideListItem">
+                                        <div class="col-lg-10 mx-auto p-0">
+                                            <a class="text-white text-s15" href="">Number Plate</a>
+                                            <hr class="mt-2 sidebar-hr">
+                                        </div>
+                                    </li>
+
+                                    <!-- ------ Vertu------ -->
+                                    <li class="sideListItem">
+                                        <div class="col-lg-10 mx-auto p-0">
+                                            <a class="text-white text-s15" href="">Vertu</a>
+                                            <hr class="mt-2 sidebar-hr">
+                                        </div>
+                                    </li>
+
+                                    <!-- ------ Watch -- ------>
+                                    <li class="sideListItem">
+                                        <div class="col-lg-10 mx-auto p-0">
+                                            <a class="text-white text-s15" href="">Watch</a>
+                                            <hr class="mt-2 sidebar-hr">
+                                        </div>
+                                    </li>
+
+                                    <!-- ------ Mobile Number -- ------>
+                                    <li class="sideListItem">
+                                        <div class="col-lg-10 mx-auto p-0">
+                                            <a class="text-white text-s15" href="">Mobile Number</a>
+                                            <hr class="mt-2 sidebar-hr">
+                                        </div>
+                                    </li>
+
+                                    <!-- ------ Boat ------ -->
+                                    <li class="sideListItem">
+                                        <div class="col-lg-10 mx-auto p-0">
+                                            <a class="text-white text-s15" href="">Boat</a>
+                                            <hr class="mt-2 sidebar-hr">
+                                        </div>
+                                    </li>
+
+                                    <!-- ------ Phone ------ -->
+                                    <li class="sideListItem">
+                                        <div class="col-lg-10 mx-auto p-0">
+                                            <a class="text-white text-s15" href="">Phone</a>
+                                            <hr class="mt-2 sidebar-hr">
+                                        </div>
+                                    </li>
+
+                                    <!-- ------ Properties ------ -->
+                                    <li class="sideListItem">
+                                        <div class="col-lg-10 mx-auto p-0">
+                                            <a class="text-white text-s15" href="">Properties</a>
+                                            <hr class="mt-2 sidebar-hr">
+                                        </div>
+                                    </li>
+                                </ul>
+                                <!-- /.Sublist -->
+                            </ul>
+                        </div>
+                        <!-- ---------- Lists ends here ---------- -->
+                    </div>
+                </div>
+            </div>
+            <!-- /.sidebar -->
+        </div>
+        <!-- /.contents -->
+    </nav>
+    <!-- ------------------------- NAVBAR ends ------------------------- -->
+
+    <!-- ------------------------- MAIN CONTENT ------------------------- -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="row">
+
+                    <!-- ------------------------- SIDEBAR starts ------------------------- -->
+                    <div class="col-sideNav bg-darkgray h-auto d-none d-md-block">
+                        <div class="col-lg-12 col-md-12 bg-darkgray h-auto">
+                            <div class="row bg-darkgray">
+
+                                <!-- ---------- Sidebar Button ---------- -->
+                                <div class="col-lg-12">
+                                    <div class="row">
+                                        <div class="col-lg-10 mx-auto py-md-4 px-lg-0">
+                                            <a href="../add-post/add-post.html">
+                                                <button type="button" class="btn btn-addpost">Add Post</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- ---------- Lists starts here ---------- -->
+                                <div class="col-lg-12 pt-lg-2 px-lg-0">
+                                    <ul class="sidebar-menu list-unstyled">
+
+                                        <!-------- Home ------ -->
+                                        <li class="sideListItem">
+                                            <div class="col-lg-10 mx-auto p-0">
+                                                <a class="text-white text-s15 d-block" href="../home/home.html">Home</a>
+                                                <hr class="mt-2 sidebar-hr">
+                                            </div>
+                                        </li>
+
+                                        <!-- ------ Dashboard ------ -->
+                                        <li class="sideListItem">
+                                            <div class="col-lg-10 mx-auto p-0">
+                                                <a class="text-white text-s15 d-block" href="../dashboard/dashboard.html">Dashboard</a>
+                                                <hr class="mt-2 sidebar-hr">
+                                            </div>
+                                        </li>
+
+                                        <!-- ------ New post ------ -->
+                                        <li class="sideListItem">
+                                            <div class="col-lg-10 mx-auto p-0">
+                                                <a class="text-white text-s15 d-block" href="../new-post/new-post.html">New post
+                                                    <span class="text-s15 text-semibold text-yellow float-right">18</span>
+                                                </a>
+                                                <hr class="mt-2 sidebar-hr">
+                                            </div>
+                                        </li>
+
+                                        <!-- ------ New Registers ------ -->
+                                        <li class="sideListItem">
+                                            <div class="col-lg-10 mx-auto p-0">
+                                                <a class="text-white text-s15 d-block" href="../new-register/new-register.html"> New Registers
+                                                    <span class="text-s15 text-yellow text-semibold float-right">30</span>
+                                                </a>
+                                                <hr class="mt-2 sidebar-hr">
+                                            </div>
+                                        </li>
+
+                                        <!-- ------Yearly Plan ------ -->
+                                        <li class="sideListItem">
+                                            <div class="col-lg-10 mx-auto p-0">
+                                                <a class="text-white text-s15 d-block" href="../plan/yearly-plan.html">Yearly Plan
+                                                    <span class="text-s15 text-yellow text-semibold float-right">1554</span>
+                                                </a>
+                                                <hr class="mt-2 sidebar-hr">
+                                            </div>
+                                        </li>
+
+                                        <!-- ------ Monthly Plan ------ -->
+                                        <li class="sideListItem">
+                                            <div class="col-lg-10 mx-auto p-0">
+                                                <a class="text-white text-s15 d-block" href="../plan/monthly-plan.html">Monthly Plan
+                                                    <span class="text-s15 text-yellow text-semibold float-right">320</span>
+                                                </a>
+                                                <hr class="mt-2 sidebar-hr">
+                                            </div>
+                                        </li>
+
+                                        <!-- ------ Yearly Limited Plan ------ -->
+                                        <li class="sideListItem">
+                                            <div class="col-lg-10 mx-auto p-0">
+                                                <a class="text-white text-s15 d-block" href="../plan/yearly-limited-plan.html">Yearly Limited Plan
+                                                    <span class="text-s15 text-yellow text-semibold float-right">200</span>
+                                                </a>
+                                                <hr class="mt-2 sidebar-hr">
+                                            </div>
+                                        </li>
+
+                                        <!-- ------Individuals------ -->
+                                        <li class="sideListItem">
+                                            <div class="col-lg-10 mx-auto p-0">
+                                                <a class="text-white text-s15 d-block" href="../plan/individuals.html">Individuals
+                                                    <span class="text-s15 text-yellow text-semibold float-right">168</span>
+                                                </a>
+                                                <hr class="mt-2 sidebar-hr">
+                                            </div>
+                                        </li>
+
+                                        <!-- ------ Watch List------ -->
+                                        <li class="sideListItem">
+                                            <div class="col-lg-10 mx-auto p-0">
+                                                <a class="text-white text-s15 d-block" href="../watchlist/watchlist.html">Watch List
+                                                    <span class="text-s15 text-yellow text-semibold float-right">211</span>
+                                                </a>
+                                                <hr class="mt-2 sidebar-hr">
+                                            </div>
+                                        </li>
+
+                                        <!-- ------ Flagged ------ -->
+                                        <li class="sideListItem">
+                                            <div class="col-lg-10 mx-auto p-0">
+                                                <a class="text-white text-s15 d-block" href="../flagged/flagged.html">Flagged
+                                                    <span class="text-s15 text-yellow text-semibold float-right">168</span>
+                                                </a>
+                                                <hr class="mt-2 sidebar-hr">
+                                            </div>
+                                        </li>
+
+                                        <!-- ------ All Categories ------ -->
+                                        <li class="sideListItem">
+                                            <div class="col-lg-10 mx-auto p-0">
+                                                <a class="text-white text-s15 d-block collapsed" data-toggle="collapse" href="#collapse-example">All Categories
+                                                    <img class="float-right sidebar-icon" src="../../assets/sidebar/up-arrow (1).png">
+                                                </a>
+                                            </div>
+                                        </li>
+
+                                        <!-- ------ Sublist : All Categories List ------ -->
+                                        <ul class="collapse list-unstyled" id="collapse-example">
+
+                                            <div class="col-lg-10 mx-auto p-0">
+                                                <hr class="mt-2 sidebar-hr">
+                                            </div>
+
+                                            <!-- ------ Car ------ -->
+                                            <li class="sideListItem">
+                                                <div class="col-lg-10 mx-auto p-0">
+                                                    <a class="text-white text-s15" href="../all-categories/car.html">Car</a>
+                                                    <hr class="mt-2 sidebar-hr">
+                                                </div>
+                                            </li>
+
+                                            <!-- ------ Bike ------ -->
+                                            <li class="sideListItem">
+                                                <div class="col-lg-10 mx-auto p-0">
+                                                    <a class="text-white text-s15" href="">Bike</a>
+                                                    <hr class="mt-2 sidebar-hr">
+                                                </div>
+                                            </li>
+
+                                            <!-- ------ Number Plate------ -->
+                                            <li class="sideListItem">
+                                                <div class="col-lg-10 mx-auto p-0">
+                                                    <a class="text-white text-s15" href="">Number Plate</a>
+                                                    <hr class="mt-2 sidebar-hr">
+                                                </div>
+                                            </li>
+
+                                            <!-- ------ Vertu------ -->
+                                            <li class="sideListItem">
+                                                <div class="col-lg-10 mx-auto p-0">
+                                                    <a class="text-white text-s15" href="">Vertu</a>
+                                                    <hr class="mt-2 sidebar-hr">
+                                                </div>
+                                            </li>
+
+                                            <!-- ------ Watch -- ------>
+                                            <li class="sideListItem">
+                                                <div class="col-lg-10 mx-auto p-0">
+                                                    <a class="text-white text-s15" href="">Watch</a>
+                                                    <hr class="mt-2 sidebar-hr">
+                                                </div>
+                                            </li>
+
+                                            <!-- ------ Mobile Number -- ------>
+                                            <li class="sideListItem">
+                                                <div class="col-lg-10 mx-auto p-0">
+                                                    <a class="text-white text-s15" href="">Mobile Number</a>
+                                                    <hr class="mt-2 sidebar-hr">
+                                                </div>
+                                            </li>
+
+                                            <!-- ------ Boat ------ -->
+                                            <li class="sideListItem">
+                                                <div class="col-lg-10 mx-auto p-0">
+                                                    <a class="text-white text-s15" href="">Boat</a>
+                                                    <hr class="mt-2 sidebar-hr">
+                                                </div>
+                                            </li>
+
+                                            <!-- ------ Phone ------ -->
+                                            <li class="sideListItem">
+                                                <div class="col-lg-10 mx-auto p-0">
+                                                    <a class="text-white text-s15" href="">Phone</a>
+                                                    <hr class="mt-2 sidebar-hr">
+                                                </div>
+                                            </li>
+
+                                            <!-- ------ Properties ------ -->
+                                            <li class="sideListItem">
+                                                <div class="col-lg-10 mx-auto p-0">
+                                                    <a class="text-white text-s15" href="">Properties</a>
+                                                    <hr class="mt-2 sidebar-hr">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <!-- /.Sublist -->
+                                    </ul>
+                                </div>
+                                <!-- /.list ends -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ------------------------- SIDEBAR ends ------------------------- -->
+
+                    <!-- ------------------------- BODY starts ------------------------- -->
+                    <div class="col-main">
+                        <div class="col-lg-12">
+                            <!-- -------- Title -------- -->
+                            <h4 class="page-title mt-4 mb-4 pb-2 pt-2">Post Details</h4>
+
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <form action="">
+                                        <div class="row">
+                                            <div class="col-lg-8 mx-auto mt-2 mb-5">
+
+                                                <!-- -------------- User Data -------------- -->
+                                                <div class="row">
+                                                    <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                                                        <div class="row">
+                                                            <!-- User Image -->
+                                                            <div class="col-lg-3 col-md-3 col-sm-3 col-2">
+                                                                <img class="userImage" src="../../assets/images/user/user2.jpg" alt="">
+                                                            </div>
+                                                            <!-- User Details -->
+                                                            <div class="col-lg-8 col-md-8 col-sm-8 col-9 pr-0 pr-md-3 pr-sm-3 pl-lg-2 pl-md-4 pl-sm-4 pl-5 pt-lg-2 pt-3">
+                                                                <p class="mb-0 text-s13 textresize text-orange text-semibold pt-lg-1">Ahmed Kabeer</p>
+                                                                <p class="mb-0 text-s12 text-semibold" style="color: #5C5C5C;">Deira, Dubai</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-6 col-6 text-right pt-4 pr-2 pr-sm-3 pr-md-3">
+                                                        <p class="mb-0 text-s13 text-semibold textresize" style="color: #797979;">Posted on 6th October 2017</p>
+                                                    </div>
+                                                </div>
+
+                                                <hr>
+
+                                                <!-- -------------- Form Fields -------------- -->
+                                                <div class="row">
+                                                    <!-- --- Category --- -->
+                                                    <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                                                        <div class="form-group">
+                                                            <label class="text-s12 text-semibold" for="">Category</label>
+                                                            <select class="form-control input-custom">
+                                                                <option value="car" data-default>Car</option>
+                                                                <option value="bike">Bike</option>
+                                                                <option value="vertu">Vertu</option>
+                                                                <option value="phone">Phone</option>
+                                                                <option value="boat">Boat</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <!-- --- Brand --- -->
+                                                    <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                                                        <div class="form-group">
+                                                            <label class="text-s12 text-semibold" for="">Brand</label>
+                                                            <select class="form-control input-custom">
+                                                                <option value="" data-default>Audi</option>
+                                                                <option value="">BMW</option>
+                                                                <option value="">Chevrolet</option>
+                                                                <option value="">D</option>
+                                                                <option value="">E</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row mt-3">
+                                                    <!-- --- Model --- -->
+                                                    <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                                                        <div class="form-group">
+                                                            <label class="text-s12 text-semibold" for="">Model</label>
+                                                            <select class="form-control input-custom">
+                                                                <option value="" data-default>Q7</option>
+                                                                <option value="">Q1</option>
+                                                                <option value="">Q2</option>
+                                                                <option value="">Q3</option>
+                                                                <option value="">Q4</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <!-- --- Year --- -->
+                                                    <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                                                        <div class="form-group">
+                                                            <label class="text-s12 text-semibold" for="">Year</label>
+                                                            <select class="form-control input-custom">
+                                                                <option value="" data-default>2012</option>
+                                                                <option value="">2013</option>
+                                                                <option value="">2014</option>
+                                                                <option value="">2015</option>
+                                                                <option value="">2016</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row mt-3">
+                                                    <!-- --- Price --- -->
+                                                    <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                                                        <div class="form-group pb-lg-2 bb1">
+                                                            <label class="text-s12 text-semibold" for="">Price</label>
+                                                            <div class="custom-control custom-checkbox ml-lg-3">
+                                                                <input type="checkbox" class="custom-control-input" id="price">
+                                                                <label class="custom-control-label" for="price">Call for Price</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- --- Add price --- -->
+                                                    <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                                                        <div class="form-group">
+                                                            <label class="text-s12 text-semibold" for="">Add price</label>
+                                                            <input type="text" class="form-control input-custom" value="AED " disabled>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- --- Details --- -->
+                                                <div class="row mt-3">
+                                                    <div class="col-lg-12">
+                                                        <label class="text-s12 text-semibold" for="">Details</label>
+                                                        <textarea class="form-control input-custom" id="" cols="30" rows="4"></textarea>
+                                                    </div>
+                                                </div>
+
+                                                <!-- --- Add Video/Photos --- -->
+                                                <div class="row mt-3">
+                                                    <div class="col-lg-12">
+                                                        <label class="text-s12 text-semibold" for="">Add Photo & Video</label>
+                                                        <div class="col-lg-12">
+                                                            <div class="row">
+                                                                <div class="card add-card">
+                                                                    <div class="h-100">
+                                                                        <input type="file" class="custom-file-input h-100" id="">
+                                                                        <img class="postImage" src="../../assets/images/car/car1.jpg" alt="">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card add-card">
+                                                                    <div class="h-100">
+                                                                        <input type="file" class="custom-file-input h-100" id="">
+                                                                        <img class="postImage" src="../../assets/images/car/car2.jpg" alt="">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="card add-card">
+                                                                    <!-- The below div gets replaced after uploading picture -->
+                                                                    <div class="h-100">
+                                                                        <input type="file" class="custom-file-input h-100" id="">
+                                                                        <img class="postImage" src="../../assets/images/car/car3.jpg" alt="">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="card add-card">
+                                                                    <!-- The below "addIcon" div shows before uploading a file
+                                                                    after uploading file, "addIcon" div is replaced with the "img" tags -->
+
+                                                                    <!-- "addIcon-V" for Videos and "addIcon-P" for photos -->
+                                                                    <div class="addIcon-V h-100">
+                                                                        <input type="file" class="custom-file-input h-100" id="">
+                                                                        <p class="text-s12 text-semibold">Add Video</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- --- Buttons --- -->
+                                                <div class="row mt-4">
+                                                    <div class="col-lg-9 mx-auto">
+                                                        <div class="row">
+                                                            <!-- --- Clear --- -->
+                                                            <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                                                                <button class="btn btn-success text-s15 w-100 pt-2 pb-2">
+                                                                    APPROVE
+                                                                </button>
+                                                            </div>
+                                                            <!-- --- Post --- -->
+                                                            <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                                                                <button class="btn btn-red text-s15 w-100 pt-2 pb-2">
+                                                                    REJECT
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- --- Buttons --- -->
+                                                <div class="row mt-4">
+                                                    <div class="col-lg-12">
+                                                        <textarea class="form-control input-custom" id="" cols="30" rows="3"></textarea>
+                                                    </div>
+                                                    <div class="col-lg-3 col-md-4 col-sm-4 col-6 ml-auto mt-2">
+                                                        <button class="btn btn-orange text-s14 w-100 pt-2 pb-2 text-normal">
+                                                            Send Message
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ------------------------- BODY ends ------------------------- -->
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- ------------------------- MAIN CONTENT ------------------------- -->
+
+
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

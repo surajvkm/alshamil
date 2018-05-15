@@ -1,0 +1,74 @@
+image: docker:git
+services:
+- docker:dind
+
+stages:
+- build
+# - test
+- release
+- deploy
+
+variables:
+  CONTAINER_TEST_IMAGE: registry.gitlab.com/bluecast_devteam/webteam/alshamil:$CI_BUILD_REF_NAME
+  CONTAINER_RELEASE_IMAGE: registry.gitlab.com/bluecast_devteam/webteam/alshamil:latest
+  IMAGE_NAME: super-alshamil-master
+  PORT: 4210
+
+# before_script:
+  # - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN registry.gitlab.com
+
+build:
+  stage: build
+  script:
+    - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN registry.gitlab.com
+    - docker build -t $CONTAINER_TEST_IMAGE .
+    - docker push $CONTAINER_TEST_IMAGE
+  only:
+    - master
+    # - gitlabci-test
+# test1:
+#   stage: test
+#   script:
+#     - docker run $CONTAINER_TEST_IMAGE /script/to/run/tests
+
+# test2:
+#   stage: test
+#   script:
+#     - docker run $CONTAINER_TEST_IMAGE /script/to/run/another/test
+
+release-image:
+  stage: release
+  script:
+    - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN registry.gitlab.com
+    - docker pull $CONTAINER_TEST_IMAGE
+    - docker tag $CONTAINER_TEST_IMAGE $CONTAINER_RELEASE_IMAGE
+    - docker push $CONTAINER_RELEASE_IMAGE
+  only:
+    - master
+    # - gitlabci-test
+
+deploy:
+  stage: deploy
+  image: kroniak/ssh-client:3.6
+  script:
+    # add the server as a known host
+    - echo "------TEST---------------"
+    - echo "$CONTAINER_TEST_IMAGE"
+    - echo "$CONTAINER_RELEASE_IMAGE"
+    - echo "------ENDTEST---------------"
+    - mkdir ~/.ssh
+    - echo "$SSH_KNOWN_HOSTS" >> ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+    # add ssh key stored in SSH_PRIVATE_KEY variable to the agent store
+    - eval $(ssh-agent -s)
+    - ssh-add <(echo "$SSH_PRIVATE_KEY")
+    # log into Docker registry
+    - ssh deployer@alshamil02.bluecast.ae "docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN registry.gitlab.com"
+    # stop container, remove image.
+    - ssh deployer@alshamil02.bluecast.ae "docker stop $IMAGE_NAME && docker rm $IMAGE_NAME" || true
+    - ssh deployer@alshamil02.bluecast.ae "docker pull $CONTAINER_RELEASE_IMAGE" || true
+    # start new container
+    - ssh deployer@alshamil02.bluecast.ae "docker run -d --name $IMAGE_NAME -p $PORT:80 -i -t -v alshamil-volume:/var/www/html/uploads $CONTAINER_RELEASE_IMAGE"
+  only:
+    - master
+    # - gitlabci-test

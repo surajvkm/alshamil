@@ -1,0 +1,17 @@
+{
+  "description" : "Ashamil Web Application",
+  "name" : "Alshamil/myApp",
+	"require": {
+		"php": ">=5.4.0",
+		"codeigniter/framework": "^3.0.4"
+	},
+  "autoload": {
+    "psr-4": {
+      "Alshamil\\":"alshamil",
+       "classmap": [
+			"application/libraries/Format.php",
+			"application/libraries/REST_Controller.php"
+		]     
+    }
+  }
+}

@@ -1,0 +1,567 @@
+/* ----------------------------------------- NAVBAR ----------------------------------------- */
+
+
+.navbar-light {
+    background-color: #F0F0F0;
+}
+
+.logo {
+    width: 260px;
+}
+
+.form-group {
+    margin-bottom: 0px;
+}
+
+/* ---------- Form Fields ---------- */
+.form-control.searchBar, select.form-control.navbar-dropdown {
+    border-color: #CCCCCC;
+    font-size: 12px;
+    color: #898989;
+    height: 35px !important;
+    background-color: #FBFBFB;
+    border-radius: 4px;
+    -moz-box-shadow: 3px 2px 6px 0px #ccc;
+    -webkit-box-shadow: 3px 2px 6px 0px #ccc;
+    box-shadow: 3px 2px 6px 0px #ccc;
+}
+.form-control:focus.searchBar, .form-control:hover.searchBar, .form-control:active.searchBar,
+select.form-control:focus.navbar-dropdown, select.form-control:hover.navbar-dropdown, select.form-control:active.navbar-dropdown {
+    -moz-box-shadow: 3px 2px 6px 0px #ccc;
+    -webkit-box-shadow: 3px 2px 6px 0px #ccc;
+    box-shadow: 3px 2px 6px 0px #ccc;
+}
+
+.form-control:focus.searchBar, .form-control:focus.searchBar,
+select.form-control:focus.navbar-dropdown , select.form-control:focus.navbar-dropdown {
+    border: 1px solid rgba(237, 29, 36, 0.726) !important;
+    outline: none !important;
+}
+
+select.form-control.navbar-dropdown {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.form-control.searchBar {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+/* ---------- Search Button ---------- */
+.btn-search {
+    height: 35px !important;
+    border: none !important;
+    width: 100%;
+    border-radius: 6px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    -moz-box-shadow: 3px 2px 6px 0px #ccc;
+    -webkit-box-shadow: 3px 2px 6px 0px #ccc;
+    box-shadow: 3px 2px 6px 0px #ccc;
+    background: #ED1D24;
+    padding: 0;
+}
+
+.btn-search:hover , .btn-search:focus, .btn-search:active {
+    background: rgba(237, 29, 36, 0.726);
+    outline: none !important;
+}
+
+.btn-search:focus, .btn-search:hover, .btn-search:active {
+    -moz-box-shadow: 3px 2px 6px 0px #ccc;
+    -webkit-box-shadow: 3px 2px 6px 0px #ccc;
+    box-shadow: 3px 2px 6px 0px #ccc;
+}
+
+.searchIcon {
+    width: 24px;
+    height: 24px;
+}
+
+.text-label {
+    color: #6E6E6E;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.text-data {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.btn-logout {
+    border: 1px solid #F58220;
+    border-radius: 6px;
+    background: #F58220;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.btn-logout:hover, .btn-logout:focus, .btn-logout:active {
+    border: 1px solid #F58220;
+    background-color: #f5831fad;
+    -webkit-box-shadow: 0 3px 5px rgba(245, 131, 32, 0.459);
+    -moz-box-shadow: 0 3px 5px rgba(245, 131, 32, 0.459);
+    box-shadow: 0 3px 5px rgba(245, 131, 32, 0.459);
+}
+
+.lineheight-2 {
+    line-height: 2;
+}
+
+/* ----------------------------------------- SIDEBAR ----------------------------------------- */
+.bg-darkgray {
+    background-color: #757779;
+}
+
+.text-yellow {
+    color: #ffd43a;
+}
+
+/* sidebar Button */
+.btn-addpost {
+    height: 40px;
+    width: 100%;
+    background-color: #f58220;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 15px;
+    color: #fff;
+}
+
+.btn-addpost:hover, .btn-addpost:focus, .btn-addpost:active {
+    border: 1px solid #F58220;
+    background-color: #f5831fe7;
+    -webkit-box-shadow: 0 3px 5px rgba(245, 131, 32, 0.459);
+    -moz-box-shadow: 0 3px 5px rgba(245, 131, 32, 0.459);
+    box-shadow: 0 3px 5px rgba(245, 131, 32, 0.459);
+}
+
+/* Sidebar Bordercolor */
+.sidebar-hr {
+    background-color: #A1A1A1;
+}
+
+/* Sidebar Dropdown Icon */
+.sidebar-icon {
+    height: 12px;
+    width: 15px;
+    margin-top: 10px;
+}
+
+.sideListItem .collapsed .sidebar-icon {
+    transform: rotate(180deg);
+    color: #fff;
+}
+
+/* Sidebar List Item hover effect */
+.sideListItem a:hover, .sideListItem a:active, .sideListItem a:focus {
+    color: #ffd43a !important;
+}
+
+/* Sidebar List Item active state */
+.sideListItem.active a {
+    color: #ffd43a !important;
+}
+
+/* ----------------------------------------- SCREEN WIDTHS ----------------------------------------- */
+.col-sideNav {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 22%;
+    flex: 0 0 22%;
+    max-width: 22%;
+    position: relative;
+    min-height: 1px;
+}
+
+.col-main {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 78%;
+    flex: 0 0 78%;
+    position: relative;
+    min-height: 1px;
+}
+
+/* ----------------------------------------- MEDIA QUERIES ----------------------------------------- */
+
+/* ------------- above lg ------------- */
+@media(max-width:1024px) and (min-width:769px) {
+
+    /* ------------- Navbar ------------- */
+    .navbar-light {
+        padding: 8px !important;
+    } 
+
+    .form_large {
+        padding-top: 21px !important;
+    }
+
+    .datetime_large {
+        padding: 15px 0 0 5px !important
+    }
+
+    .btn_large {
+        padding-top: 15px !important;
+    }
+}
+
+@media(max-width:768px) and (min-width:577px) {
+    /* -------------- Navbar -------------- */
+    /* navbar logo */
+    .logo {
+        width:200px;
+    }
+
+    .text-data {
+        font-size: 11px;
+    }
+
+    .btn-logout {
+        font-size: 13px;
+        padding-right: 9px;
+    }
+    /* ------ Side Nav ------ */
+    .col-sideNav {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 28%;
+        flex: 0 0 30%;
+        max-width: 44%;
+        position: relative;
+        min-height: 1px;
+    }
+}
+
+/* ------------- SM ------------- */
+@media(max-width:576px) and (min-width:550px) {
+
+    /* -------------- Navbar -------------- */
+    /* navbar logo */
+    .logo {
+        width: 150px;
+    }
+
+    /* Search bar */
+    .form-control.searchBar, select.form-control.navbar-dropdown {
+        font-size: 10px;
+    }
+
+    .text-data {
+        font-size: 10px;
+    }
+
+    /* Navbar button */
+    .btn-logout {
+        padding: 6px;
+        font-size: 14px;
+    }
+     /* ------ Side Nav ------ */
+    .col-sideNav {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 28%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        position: relative;
+        min-height: 1px;
+    } 
+    
+}
+
+/* ------------- XS ------------- */
+@media(max-width:550px) {
+    /* -------------- Navbar -------------- */
+    /* navbar logo */
+   .logo {
+        width: 195px !important;
+    }
+
+    /* Navbar button */
+    .btn-logout {
+        float: right;
+        font-size: 10px;
+        padding: 3px 9px;
+    }
+
+    /* ------ Side Nav ------ */
+    .col-sideNav {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 28%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        position: relative;
+        min-height: 1px;
+    }
+}
+
+.btn-dashGreen {
+    color: #FFF;
+    background-color: #75CF00;
+    border: 1px solid #75CF00;
+}
+.btn-dashRed {
+    color: #FFF;
+    background-color: #FF0000;
+    border: 1px solid #FF0000;
+}
+.btn-dashGrey {
+    color: #FFF;
+    background-color: #757779;
+    border: 1px solid #757779;
+}
+.btn-dashOrange {
+    color: #FFF;
+    background-color: #F7941D;
+    border: 1px solid #F7941D;
+}
+.btn-dashSalmon {
+    color: #FFF;
+    background-color: #F26522;
+    border: 1px solid #F26522;
+}
+
+.btn-large {
+    border-radius: 0px;
+    margin-right: 14px;
+    font-size: 18px;
+    pointer-events: none;
+    cursor: default;
+
+    height: 80px;
+    width: 18.3%;
+}
+
+.btn-large:last-child {
+    margin-right: 0px !important;
+}
+
+.text-s25 {
+    font-size: 25px;
+}
+
+.graphDiv, .traderDiv {
+    background-color: #F2F2F2;
+    padding: 10px;
+}
+
+.graphDiv {
+    width: 70%;
+    margin-right: 2%;
+}
+
+.traderDiv {
+    width: 28%;
+}
+
+.userImageD {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #F5821F;
+}
+
+.scaleDiv:hover {
+    -webkit-transform: scale(1.04);
+}
+
+/* ----------------------------------------- MEDIA QUERIES ----------------------------------------- */
+@media(max-width:1024px) and (min-width:769px) {
+
+    .user-padding {
+        padding-left: 30px !important;
+    }
+
+    .btn-large {
+        margin-right: 14px !important;
+    }
+
+    .btn {
+        padding: 6px 3px !important;
+    }
+
+    .percentage {
+        margin-left: 5px !important;
+    }
+}
+
+/* ------------- MD ------------- */
+@media(max-width:768px) and (min-width:577px) {
+    .col-main {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 78%;
+        flex: 0 0 70%;
+        position: relative;
+        min-height: 1px;
+    }
+
+    .btn-large {
+        width: 17.8%;
+        font-size: 15px;
+        margin-right: 5px!important;
+    }
+
+    .graphDiv {
+        width: 65%;
+    }
+
+    .traderDiv {
+        width: 33%;
+        padding: 5px;
+    }
+    .text-resize {
+        font-size: 13px;
+    }
+
+    .text-adjust {
+        font-size: 10px;
+    }
+
+    .userImageD {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+/* ------------- SM ------------- */
+@media(max-width:576px) and (min-width:550px) {
+
+    /* Main Content */
+    .col-main {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        position: relative;
+        min-height: 1px;
+    }
+
+    .btn-large {
+        width: 17.8%;
+        font-size: 15px;
+        margin-right: 7px!important;
+    }
+
+    .traderDiv {
+        width: 28%;
+        padding: 5px;
+    }
+    .text-resize {
+        font-size: 13px;
+    }
+
+    .text-adjust {
+        font-size: 10px;
+    }
+
+    .userImageD {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+/* ------------- XS ------------- */
+@media(max-width:550px) and (min-width:425px) {
+
+    /* Main Content */
+    .col-main {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        position: relative;
+        min-height: 1px;
+    }
+
+    /* button */
+    .btn-text {
+        font-size: 13px;
+    }
+
+    .btn-num {
+        font-size: 16px;
+    }
+
+    .btn-large {
+        width: 17.8%;
+        font-size: 15px;
+        margin-right: 5px!important;
+    }
+
+    /* Trader */
+    .traderDiv {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .text-resize {
+        font-size: 13px;
+    }
+
+    /* Graph */
+    .graphDiv {
+        width: 100%;
+    }
+
+    .postnumber-padding {
+        padding-left: 40px !important;
+    }
+
+    /* User Image */
+    .userImageD {
+        width: 50px;
+        height: 50px;
+    }
+
+    .user-padding {
+        padding-left: 0 !important;
+    }
+}
+
+/* ------------- Below XS ------------- */
+@media(max-width:424px) {
+
+    /* Main Content */
+    .col-main {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        position: relative;
+        min-height: 1px;
+    }
+
+    .btn-large {
+        width: 16.8%;
+        font-size: 15px;
+        margin-right: 6px!important;
+        padding: 0;
+    }
+
+    .graphDiv {
+        width: 100%;
+    }
+
+    .traderDiv {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .text-resize {
+        font-size: 13px;
+    }
+
+    .text-trader {
+        font-size: 13px;
+    }
+
+    .userImageD {
+        width: 50px;
+        height: 50px;
+    }
+
+    .btn-text {
+        font-size: 10px;
+    }
+
+    .btn-num {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,1279 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- -------- Icon -------- -->
+    <link rel="icon" type="image/x-icon" href="../../assets/favicon.ico">
+
+    <!-- -------- Title -------- -->
+    <title>Al-Shamil</title>
+
+    <!-- -------- Bootstrap CSS -------- -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <!-- -------- Font Awesome -------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- -------- Custom CSS -------- -->
+    <!-- For global styles -->
+    <link rel="stylesheet" href="../../styles.css">
+    <!-- For Sidebar and Navbar -->
+    <link rel="stylesheet" href="../default.css">
+    <!-- Each PAGE CSS -->
+    <link rel="stylesheet" href="./plans.css">
+
+</head>
+
+<body>
+
+    <!-- ------------------------- NAVBAR starts ------------------------- -->
+    <nav class="navbar navbar-expand-md navbar-light trader-navbar p-md-3 p-1">
+
+        <!-- ------- Logo ------- -->
+        <a class="navbar-brand" href="#">
+            <img class="logo" src="../../assets/navbar/Logo@2x.png" alt="Logo">
+        </a>
+
+        <!-- ------- Toggle Button (sm) ------- -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapseContent" aria-haspopup="true"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- ------- The Content inside Navbar(for all screens except sm) / toggle button (sm) ------- -->
+        <div class="collapse navbar-collapse" id="navbarCollapseContent">
+
+            <div class="col-lg-12 col-md-12 col-12 pt-sm-3 pt-md-2 pt-lg-0">
+                <!-- Navbar List -->
+                <ul class="list-unstyled m-0">
+                    <div class="row">
+
+                        <!-- Forms -->
+                        <div class="col-lg-6 col-md-6 col-sm-6 pl-md-2 pl-lg-3">
+                            <li>
+                                <!-- Search form starts here -->
+                                <form>
+                                    <div class="form-group form_large pt-4 pb-2 pt-lg-2 pt-sm-0">
+                                        <div class="row">
+                                            <div class="col-lg-11 col-md-10 col-sm-10 col-10 pl-sm-0 pl-md-0 pl-lg-3 pr-0">
+                                                <div class="input-group">
+
+                                                    <!-- Dropdown -->
+                                                    <div class="input-group-prepend">
+                                                        <select class="form-control navbar-dropdown">
+                                                            <option value="" data-default>All Categories</option>
+                                                            <option value="car">Car</option>
+                                                            <option value="bike">Bike</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <!-- SearchBar -->
+                                                    <input type="text" class="form-control searchBar" placeholder="Search for...">
+                                                </div>
+                                            </div>
+
+                                            <!-- Search Button -->
+                                            <div class="col-lg-1 col-md-2 col-sm-2 col-2 pl-0 pr-0">
+                                                <button class="btn btn-search">
+                                                    <img class="searchIcon" src="../../assets/navbar/Search.png" alt="">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                                <!-- /.search ends here -->
+                            </li>
+                        </div>
+                        <!-- /.forms -->
+
+                        <!-- Date -->
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-4 datetime_large px-0 pl-sm-3 pr-sm-0 pr-md-0 pr-lg-3 pl-lg-4 pl-md-2 lineheight-2">
+                            <li class="pl-lg-2">
+                                <p class="mb-0 text-label d-none d-sm-block">Date</p>
+                                <p class="mb-0 text-data">24 March 2018</p>
+                            </li>
+                        </div>
+
+                        <!-- Time -->
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-4 datetime_large pr-md-0 pr-lg-3 pl-md-2 pl-lg-3 pr-0 pl-0 text-right text-sm-left text-md-left lineheight-2">
+                            <li>
+                                <p class="mb-0 text-label d-none d-sm-block">Time</p>
+                                <p class="mb-0 text-data">11 : 03 : 20 pm</p>
+                            </li>
+                        </div>
+
+                        <!-- Logout -->
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-4 btn_large text-center pr-0 pl-0 px-sm-0 px-md-1 px-lg-3 mb-2">
+                            <li>
+                                <button class="btn btn-logout pl-lg-2 pr-lg-2">
+                                    <img src="../../assets/navbar/Logout.png" alt=""> Logout
+                                </button>
+                            </li>
+                        </div>
+                    </div>
+                </ul>
+                <!-- /.navbar list -->
+            </div>
+
+            <!-- ------ Sidebar inside navbar collapse starts here (This only displays in sm) ------ -->
+            <div class="col-sideNav d-block d-md-none">
+                <div class="col-lg-12 bg-darkgray h-auto">
+                    <div class="row bg-darkgray">
+
+                        <!-- ---------- AddPost Button ---------- -->
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-10 mx-auto py-4 px-lg-0">
+                                    <a href="../add-post/add-post.html">
+                                        <button type="button" class="btn btn-addpost">Add Post</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ---------- Lists starts here ---------- -->
+                        <div class="col-lg-12 pt-lg-2 px-lg-0">
+                            <ul class="sidebar-menu list-unstyled">
+
+                                <!-------- Home ------ -->
+                                <li class="sideListItem">
+                                    <div class="col-lg-10 mx-auto p-0">
+                                        <a class="text-white text-s15 d-block" href="../home/home.html">Home</a>
+                                        <hr class="mt-2 sidebar-hr">
+                                    </div>
+                                </li>
+
+                                <!-- ------ Dashboard ------ -->
+                                <li class="sideListItem">
+                                    <div class="col-lg-10 mx-auto p-0">
+                                        <a class="text-white text-s15 d-block" href="../dashboard/dashboard.html">Dashboard</a>
+                                        <hr class="mt-2 sidebar-hr">
+                                    </div>
+                                </li>
+
+                                <!-- ------ New post ------ -->
+                                <li class="sideListItem">
+                                    <div class="col-lg-10 mx-auto p-0">
+                                        <a class="text-white text-s15 d-block" href="../new-post/new-post.html">New post
+                                            <span class="text-s15 text-semibold text-yellow float-right">18</span>
+                                        </a>
+                                        <hr class="mt-2 sidebar-hr">
+                                    </div>
+                                </li>
+
+                                <!-- ------ New Registers ------ -->
+                                <li class="sideListItem">
+                                    <div class="col-lg-10 mx-auto p-0">
+                                        <a class="text-white text-s15 d-block" href="../new-register/new-register.html"> New Registers
+                                            <span class="text-s15 text-yellow text-semibold float-right">30</span>
+                                        </a>
+                                        <hr class="mt-2 sidebar-hr">
+                                    </div>
+                                </li>
+
+                                <!-- ------Yearly Plan ------ -->
+                                <li class="sideListItem">
+                                    <div class="col-lg-10 mx-auto p-0">
+                                        <a class="text-white text-s15 d-block" href="../plan/yearly-plan.html">Yearly Plan
+                                            <span class="text-s15 text-yellow text-semibold float-right">1554</span>
+                                        </a>
+                                        <hr class="mt-2 sidebar-hr">
+                                    </div>
+                                </li>
+
+                                <!-- ------ Monthly Plan ------ -->
+                                <li class="sideListItem">
+                                    <div class="col-lg-10 mx-auto p-0">
+                                        <a class="text-white text-s15 d-block" href="../plan/monthly-plan.html">Monthly Plan
+                                            <span class="text-s15 text-yellow text-semibold float-right">320</span>
+                                        </a>
+                                        <hr class="mt-2 sidebar-hr">
+                                    </div>
+                                </li>
+
+                                <!-- ------ Yearly Limited Plan ------ -->
+                                <li class="sideListItem">
+                                    <div class="col-lg-10 mx-auto p-0">
+                                        <a class="text-white text-s15 d-block" href="../plan/yearly-limited-plan.html">Yearly Limited Plan
+                                            <span class="text-s15 text-yellow text-semibold float-right">200</span>
+                                        </a>
+                                        <hr class="mt-2 sidebar-hr">
+                                    </div>
+                                </li>
+
+                                <!-- ------Individuals------ -->
+                                <li class="sideListItem">
+                                    <div class="col-lg-10 mx-auto p-0">
+                                        <a class="text-white text-s15 d-block" href="../plan/individuals.html">Individuals
+                                            <span class="text-s15 text-yellow text-semibold float-right">168</span>
+                                        </a>
+                                        <hr class="mt-2 sidebar-hr">
+                                    </div>
+                                </li>
+
+                                <!-- ------ Watch List------ -->
+                                <li class="sideListItem">
+                                    <div class="col-lg-10 mx-auto p-0">
+                                        <a class="text-white text-s15 d-block" href="../watchlist/watchlist.html">Watch List
+                                            <span class="text-s15 text-yellow text-semibold float-right">211</span>
+                                        </a>
+                                        <hr class="mt-2 sidebar-hr">
+                                    </div>
+                                </li>
+
+                                <!-- ------ Flagged ------ -->
+                                <li class="sideListItem">
+                                    <div class="col-lg-10 mx-auto p-0">
+                                        <a class="text-white text-s15 d-block" href="../flagged/flagged.html">Flagged
+                                            <span class="text-s15 text-yellow text-semibold float-right">168</span>
+                                        </a>
+                                        <hr class="mt-2 sidebar-hr">
+                                    </div>
+                                </li>
+
+                                <!-- ------ All Categories ------ -->
+                                <li class="sideListItem">
+                                    <div class="col-lg-10 mx-auto p-0">
+                                        <a class="text-white text-s15 d-block collapsed" data-toggle="collapse" href="#collapse-example2">All Categories
+                                            <img class="float-right sidebar-icon" src="../../assets/sidebar/up-arrow (1).png">
+                                        </a>
+                                    </div>
+                                </li>
+
+                                <!-- ------ Sublist : All Categories ------ -->
+                                <ul class="collapse list-unstyled" id="collapse-example2">
+                                    <div class="col-lg-10 mx-auto p-0">
+                                        <hr class="mt-2 sidebar-hr">
+                                    </div>
+
+                                    <!-- ------ Car ------ -->
+                                    <li class="sideListItem">
+                                        <div class="col-lg-10 mx-auto p-0">
+                                            <a class="text-white text-s15" href="../all-categories/car.html">Car</a>
+                                            <hr class="mt-2 sidebar-hr">
+                                        </div>
+                                    </li>
+
+                                    <!-- ------ Bike ------ -->
+                                    <li class="sideListItem">
+                                        <div class="col-lg-10 mx-auto p-0">
+                                            <a class="text-white text-s15" href="">Bike</a>
+                                            <hr class="mt-2 sidebar-hr">
+                                        </div>
+                                    </li>
+
+                                    <!-- ------ Number Plate------ -->
+                                    <li class="sideListItem">
+                                        <div class="col-lg-10 mx-auto p-0">
+                                            <a class="text-white text-s15" href="">Number Plate</a>
+                                            <hr class="mt-2 sidebar-hr">
+                                        </div>
+                                    </li>
+
+                                    <!-- ------ Vertu------ -->
+                                    <li class="sideListItem">
+                                        <div class="col-lg-10 mx-auto p-0">
+                                            <a class="text-white text-s15" href="">Vertu</a>
+                                            <hr class="mt-2 sidebar-hr">
+                                        </div>
+                                    </li>
+
+                                    <!-- ------ Watch -- ------>
+                                    <li class="sideListItem">
+                                        <div class="col-lg-10 mx-auto p-0">
+                                            <a class="text-white text-s15" href="">Watch</a>
+                                            <hr class="mt-2 sidebar-hr">
+                                        </div>
+                                    </li>
+
+                                    <!-- ------ Mobile Number -- ------>
+                                    <li class="sideListItem">
+                                        <div class="col-lg-10 mx-auto p-0">
+                                            <a class="text-white text-s15" href="">Mobile Number</a>
+                                            <hr class="mt-2 sidebar-hr">
+                                        </div>
+                                    </li>
+
+                                    <!-- ------ Boat ------ -->
+                                    <li class="sideListItem">
+                                        <div class="col-lg-10 mx-auto p-0">
+                                            <a class="text-white text-s15" href="">Boat</a>
+                                            <hr class="mt-2 sidebar-hr">
+                                        </div>
+                                    </li>
+
+                                    <!-- ------ Phone ------ -->
+                                    <li class="sideListItem">
+                                        <div class="col-lg-10 mx-auto p-0">
+                                            <a class="text-white text-s15" href="">Phone</a>
+                                            <hr class="mt-2 sidebar-hr">
+                                        </div>
+                                    </li>
+
+                                    <!-- ------ Properties ------ -->
+                                    <li class="sideListItem">
+                                        <div class="col-lg-10 mx-auto p-0">
+                                            <a class="text-white text-s15" href="">Properties</a>
+                                            <hr class="mt-2 sidebar-hr">
+                                        </div>
+                                    </li>
+                                </ul>
+                                <!-- /.Sublist -->
+                            </ul>
+                        </div>
+                        <!-- ---------- Lists ends here ---------- -->
+                    </div>
+                </div>
+            </div>
+            <!-- /.sidebar -->
+        </div>
+        <!-- /.contents -->
+    </nav>
+    <!-- ------------------------- NAVBAR ends ------------------------- -->
+
+    <!-- ------------------------- MAIN CONTENT ------------------------- -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="row">
+
+                    <!-- ------------------------- SIDEBAR starts ------------------------- -->
+                    <div class="col-sideNav bg-darkgray h-auto d-none d-md-block">
+                        <div class="col-lg-12 col-md-12 bg-darkgray h-auto">
+                            <div class="row bg-darkgray">
+
+                                <!-- ---------- Sidebar Button ---------- -->
+                                <div class="col-lg-12">
+                                    <div class="row">
+                                        <div class="col-lg-10 mx-auto py-md-4 px-lg-0">
+                                            <a href="../add-post/add-post.html">
+                                                <button type="button" class="btn btn-addpost">Add Post</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- ---------- Lists starts here ---------- -->
+                                <div class="col-lg-12 pt-lg-2 px-lg-0">
+                                    <ul class="sidebar-menu list-unstyled">
+
+                                        <!-------- Home ------ -->
+                                        <li class="sideListItem">
+                                            <div class="col-lg-10 mx-auto p-0">
+                                                <a class="text-white text-s15 d-block" href="../home/home.html">Home</a>
+                                                <hr class="mt-2 sidebar-hr">
+                                            </div>
+                                        </li>
+
+                                        <!-- ------ Dashboard ------ -->
+                                        <li class="sideListItem">
+                                            <div class="col-lg-10 mx-auto p-0">
+                                                <a class="text-white text-s15 d-block" href="../dashboard/dashboard.html">Dashboard</a>
+                                                <hr class="mt-2 sidebar-hr">
+                                            </div>
+                                        </li>
+
+                                        <!-- ------ New post ------ -->
+                                        <li class="sideListItem">
+                                            <div class="col-lg-10 mx-auto p-0">
+                                                <a class="text-white text-s15 d-block" href="../new-post/new-post.html">New post
+                                                    <span class="text-s15 text-semibold text-yellow float-right">18</span>
+                                                </a>
+                                                <hr class="mt-2 sidebar-hr">
+                                            </div>
+                                        </li>
+
+                                        <!-- ------ New Registers ------ -->
+                                        <li class="sideListItem">
+                                            <div class="col-lg-10 mx-auto p-0">
+                                                <a class="text-white text-s15 d-block" href="../new-register/new-register.html"> New Registers
+                                                    <span class="text-s15 text-yellow text-semibold float-right">30</span>
+                                                </a>
+                                                <hr class="mt-2 sidebar-hr">
+                                            </div>
+                                        </li>
+
+                                        <!-- ------Yearly Plan ------ -->
+                                        <li class="sideListItem">
+                                            <div class="col-lg-10 mx-auto p-0">
+                                                <a class="text-white text-s15 d-block" href="../plan/yearly-plan.html">Yearly Plan
+                                                    <span class="text-s15 text-yellow text-semibold float-right">1554</span>
+                                                </a>
+                                                <hr class="mt-2 sidebar-hr">
+                                            </div>
+                                        </li>
+
+                                        <!-- ------ Monthly Plan ------ -->
+                                        <li class="sideListItem">
+                                            <div class="col-lg-10 mx-auto p-0">
+                                                <a class="text-white text-s15 d-block" href="../plan/monthly-plan.html">Monthly Plan
+                                                    <span class="text-s15 text-yellow text-semibold float-right">320</span>
+                                                </a>
+                                                <hr class="mt-2 sidebar-hr">
+                                            </div>
+                                        </li>
+
+                                        <!-- ------ Yearly Limited Plan ------ -->
+                                        <li class="sideListItem">
+                                            <div class="col-lg-10 mx-auto p-0">
+                                                <a class="text-white text-s15 d-block" href="../plan/yearly-limited-plan.html">Yearly Limited Plan
+                                                    <span class="text-s15 text-yellow text-semibold float-right">200</span>
+                                                </a>
+                                                <hr class="mt-2 sidebar-hr">
+                                            </div>
+                                        </li>
+
+                                        <!-- ------Individuals------ -->
+                                        <li class="sideListItem">
+                                            <div class="col-lg-10 mx-auto p-0">
+                                                <a class="text-white text-s15 d-block" href="../plan/individuals.html">Individuals
+                                                    <span class="text-s15 text-yellow text-semibold float-right">168</span>
+                                                </a>
+                                                <hr class="mt-2 sidebar-hr">
+                                            </div>
+                                        </li>
+
+                                        <!-- ------ Watch List------ -->
+                                        <li class="sideListItem">
+                                            <div class="col-lg-10 mx-auto p-0">
+                                                <a class="text-white text-s15 d-block" href="../watchlist/watchlist.html">Watch List
+                                                    <span class="text-s15 text-yellow text-semibold float-right">211</span>
+                                                </a>
+                                                <hr class="mt-2 sidebar-hr">
+                                            </div>
+                                        </li>
+
+                                        <!-- ------ Flagged ------ -->
+                                        <li class="sideListItem">
+                                            <div class="col-lg-10 mx-auto p-0">
+                                                <a class="text-white text-s15 d-block" href="../flagged/flagged.html">Flagged
+                                                    <span class="text-s15 text-yellow text-semibold float-right">168</span>
+                                                </a>
+                                                <hr class="mt-2 sidebar-hr">
+                                            </div>
+                                        </li>
+
+                                        <!-- ------ All Categories ------ -->
+                                        <li class="sideListItem">
+                                            <div class="col-lg-10 mx-auto p-0">
+                                                <a class="text-white text-s15 d-block collapsed" data-toggle="collapse" href="#collapse-example">All Categories
+                                                    <img class="float-right sidebar-icon" src="../../assets/sidebar/up-arrow (1).png">
+                                                </a>
+                                            </div>
+                                        </li>
+
+                                        <!-- ------ Sublist : All Categories List ------ -->
+                                        <ul class="collapse list-unstyled" id="collapse-example">
+
+                                            <div class="col-lg-10 mx-auto p-0">
+                                                <hr class="mt-2 sidebar-hr">
+                                            </div>
+
+                                            <!-- ------ Car ------ -->
+                                            <li class="sideListItem">
+                                                <div class="col-lg-10 mx-auto p-0">
+                                                    <a class="text-white text-s15" href="../all-categories/car.html">Car</a>
+                                                    <hr class="mt-2 sidebar-hr">
+                                                </div>
+                                            </li>
+
+                                            <!-- ------ Bike ------ -->
+                                            <li class="sideListItem">
+                                                <div class="col-lg-10 mx-auto p-0">
+                                                    <a class="text-white text-s15" href="">Bike</a>
+                                                    <hr class="mt-2 sidebar-hr">
+                                                </div>
+                                            </li>
+
+                                            <!-- ------ Number Plate------ -->
+                                            <li class="sideListItem">
+                                                <div class="col-lg-10 mx-auto p-0">
+                                                    <a class="text-white text-s15" href="">Number Plate</a>
+                                                    <hr class="mt-2 sidebar-hr">
+                                                </div>
+                                            </li>
+
+                                            <!-- ------ Vertu------ -->
+                                            <li class="sideListItem">
+                                                <div class="col-lg-10 mx-auto p-0">
+                                                    <a class="text-white text-s15" href="">Vertu</a>
+                                                    <hr class="mt-2 sidebar-hr">
+                                                </div>
+                                            </li>
+
+                                            <!-- ------ Watch -- ------>
+                                            <li class="sideListItem">
+                                                <div class="col-lg-10 mx-auto p-0">
+                                                    <a class="text-white text-s15" href="">Watch</a>
+                                                    <hr class="mt-2 sidebar-hr">
+                                                </div>
+                                            </li>
+
+                                            <!-- ------ Mobile Number -- ------>
+                                            <li class="sideListItem">
+                                                <div class="col-lg-10 mx-auto p-0">
+                                                    <a class="text-white text-s15" href="">Mobile Number</a>
+                                                    <hr class="mt-2 sidebar-hr">
+                                                </div>
+                                            </li>
+
+                                            <!-- ------ Boat ------ -->
+                                            <li class="sideListItem">
+                                                <div class="col-lg-10 mx-auto p-0">
+                                                    <a class="text-white text-s15" href="">Boat</a>
+                                                    <hr class="mt-2 sidebar-hr">
+                                                </div>
+                                            </li>
+
+                                            <!-- ------ Phone ------ -->
+                                            <li class="sideListItem">
+                                                <div class="col-lg-10 mx-auto p-0">
+                                                    <a class="text-white text-s15" href="">Phone</a>
+                                                    <hr class="mt-2 sidebar-hr">
+                                                </div>
+                                            </li>
+
+                                            <!-- ------ Properties ------ -->
+                                            <li class="sideListItem">
+                                                <div class="col-lg-10 mx-auto p-0">
+                                                    <a class="text-white text-s15" href="">Properties</a>
+                                                    <hr class="mt-2 sidebar-hr">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <!-- /.Sublist -->
+                                    </ul>
+                                </div>
+                                <!-- /.list ends -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ------------------------- SIDEBAR ends ------------------------- -->
+
+                    <!-- ------------------------- BODY starts ------------------------- -->
+                    <div class="col-main">
+                        <div class="col-lg-12 col-12">
+                            <!-- -------- Title -------- -->
+                            <h4 class="page-title mt-4 mb-2 pb-2 pt-2">Profile</h4>
+
+                            <div class="row">
+                                <div class="col-lg-12 col-12 px-md-2 px-lg-3">
+
+                                    <!-- ------------------ Profile Card ------------------------ -->
+                                    <div class="bg-profile p-2 ml-1 mr-1 mb-2 overflow-hidden">
+
+                                        <!-- --------------- Main Row --------------- -->
+                                        <div class="col-lg-12 col-12">
+                                            <div class="row">
+
+                                                <!-- ------ Profile details ------ -->
+                                                <div class="col-lg-3 col-md-3 col-sm-3 col-12 px-1 px-md-3">
+                                                    <div class="row">
+
+                                                        <!-- Profile image -->
+                                                        <div class="col-lg-12 text-center pt-3 pl-md-3 pl-0">
+                                                            <img class="profileImage" src="../../assets/images/user/user4.jpg" alt="">
+                                                        </div>
+
+                                                        <div class="col-lg-12 text-center px-lg-3  pt-2 pl-0 pr-0">
+                                                            <!-- Name -->
+                                                            <p class="mb-2 text-orange text-s15 text-adjust text-semibold">Ahmed Kabeer</p>
+
+                                                            <!-- Days Left -->
+                                                            <p class="mb-2 text-s15 text-resize">17 days left -
+                                                                <a class="text-orange text-resize text-semibold" data-toggle="modal" href="#editPlanModal">
+                                                                    <!-- Link -->
+                                                                    <i> Edit Plan</i>
+                                                                </a>
+
+                                                                <!-- --------------- Modal : Edit Plan --------------- -->
+                                                                <div class="modal fade" id="editPlanModal" tabindex="-1" role="dialog" aria-hidden="true">
+                                                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                                                        <div class="modal-content">
+                                                                            <form action="">
+                                                                                <div class="col-lg-12">
+                                                                                    <div class="row">
+
+                                                                                        <div class="col-lg-12 mt-lg-4">
+                                                                                            <div class="form-group text-left">
+                                                                                                <label class="text-s12 text-semibold ml-lg-2 mb-1" style="color: #7F7F7F;" for="">Select Plan</label>
+                                                                                                <select class="form-control input-custom">
+                                                                                                    <option value="1" data-default>Yearly Plan Custom</option>
+                                                                                                    <option value="2">Plan 2</option>
+                                                                                                    <option value="3">Plan 3</option>
+                                                                                                    <option value="4">Plan 4</option>
+                                                                                                    <option value="5">Plan 5</option>
+                                                                                                </select>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-lg-12 mt-lg-3">
+                                                                                            <div class="form-group text-left">
+                                                                                                <label class="text-s12 text-semibold ml-lg-2 mb-1" style="color: #7F7F7F;" for="">Days</label>
+                                                                                                <input type="text" class="form-control input-custom">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-lg-12 mt-lg-4 pt-lg-2 mb-lg-4">
+                                                                                            <button class="btn btn-orange text-s15 w-100 pt-2 pb-2 text-normal">
+                                                                                                Save
+                                                                                            </button>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </form>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </p>
+                                                        </div>
+
+                                                        <!-- Social Icons -->
+                                                        <div class="col-lg-12 col-12 pt-lg-3 pl-md-2 pl-lg-3 pl-sm-2 ">
+                                                            <div class="row">
+                                                                <div class="col-lg-2 col-md-1 col-sm-2 col-2 text-center ml-lg-2 p-lg-0 pl-md-1 pl-sm-3 pr-md-1 pl-5 pr-md-2 pr-0">
+                                                                    <img class="social-icon" src="../../assets/icons/social-web.png" alt="">
+                                                                </div>
+
+                                                                <div class="col-lg-2 col-md-1 col-sm-2 col-2 text-center ml-lg-1 pl-sm-2 pl-md-3 p-lg-0 pr-md-10 pl-5 pr-md-2 pr-0">
+                                                                    <img class="social-icon" src="../../assets/icons/social-twitter.png" alt="">
+                                                                </div>
+                                                                <div class="col-lg-2 col-md-1 col-sm-2 col-2 text-center ml-lg-1 pl-sm-2 pl-md-3 p-lg-0 pr-md-10 pl-5 pr-md-2 pr-0">
+                                                                    <img class="social-icon" src="../../assets/icons/social-facebook.png" alt="">
+                                                                </div>
+                                                                <div class="col-lg-2 col-md-1 col-sm-2 col-2 text-center ml-lg-1 pl-sm-2 pl-md-3 p-lg-0 pr-md-10 pl-5 pr-md-2 pr-0">
+                                                                    <img class="social-icon" src="../../assets/icons/social-instagram.png" alt="">
+                                                                </div>
+                                                                <div class="col-lg-2 col-md-1 col-sm-2 col-2 text-center ml-lg-1 pl-sm-2 pl-md-3 p-lg-0 pr-md-10 pl-5 pr-md-2 pr-0">
+                                                                    <img class="social-icon" src="../../assets/icons/social-snapchat.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- Buttons -->
+                                                        <div class="col-lg-12 col-12 pt-3 mb-lg-2 px-lg-3 px-md-2 mb-3 ml-3 ml-sm-0 ml-md-0">
+                                                            <div class="row">
+                                                                <!-- Edit -->
+                                                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 pr-0 pl-md-2 pl-lg-3">
+                                                                    <button class="btn btn-orange text-resize pt-1 pb-1 w-90 text-s14">
+                                                                        Edit
+                                                                    </button>
+                                                                </div>
+                                                                <!-- Freeze -->
+                                                                <div class="col-lg-6 col-md-6 col-sm-6 col-6 pl-0 pr-md-2 pr-lg-3">
+                                                                    <button class="btn btn-red text-resize pt-1 pb-1 pl-md-2 w-90 text-s14">
+                                                                        Freeze
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- ------ Forms ------ -->
+                                                <div class="col-lg-6 col-md-6 col-sm-6 col-8">
+                                                    <div class="row">
+                                                        <div class="col-lg-12 bg-profileForm mt-lg-1 pt-md-2 pb-lg-2 pb-md-3 pt-sm-3 pb-sm-4 pt-3 pb-4">
+                                                            <div class="row">
+                                                                <div class="col-lg-6 col-md-6 col-6">
+                                                                    <div class="row">
+
+                                                                        <!-- Place -->
+                                                                        <div class="col-lg-12">
+                                                                            <p class="mb-0 text-s13 text-resize text-readjust " style="color: #696969;">Place</p>
+                                                                            <p class="mb-0 text-s13 text-resize text-semibold text-readjust " style="color: #282828;">Deira, Dubai</p>
+                                                                            <hr class="mt-2 mb-1">
+                                                                        </div>
+
+                                                                        <!-- Email -->
+                                                                        <div class="col-lg-12 pt-lg-2">
+                                                                            <p class="mb-0 text-s13 text-resize text-readjust " style="color: #696969;">Email</p>
+                                                                            <p class="mb-0 text-s13 text-email text-semibold" style="color: #282828;">Ahmedkabeer@gmail.com</p>
+                                                                            <hr class="mt-2 mb-1">
+                                                                        </div>
+
+                                                                        <!-- Mobile -->
+                                                                        <div class="col-lg-12 pt-lg-2">
+                                                                            <p class="mb-0 text-s13 text-resize text-readjust " style="color: #696969;">Mobile</p>
+                                                                            <p class="mb-0 text-s13 text-resize text-semibold text-readjust " style="color: #282828;">+91 68542265412</p>
+                                                                            <hr class="mt-2 mb-1">
+                                                                        </div>
+
+                                                                        <!-- About -->
+                                                                        <div class="col-lg-12 pt-lg-2 pb-lg-2">
+                                                                            <p class="mb-0 text-s13 text-resize" style="color: #696969;">About</p>
+                                                                            <p class="mb-0 text-s13 text-about text-semibold text-truncate-4" style="color: #282828;">Lorem Ipsum dolor emit amur of elephant get abc
+                                                                                ety erefty koala is an animal Lorem Ipsum
+                                                                                dolor emit amur of elephant get abc ety erefty
+                                                                                koala is an animal </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <!-- Attachments -->
+                                                                <div class="col-lg-6 col-md-6 col-6 vbl border-height mt-lg-3 mb-2 pl-lg-4 pr-lg-4">
+                                                                    <div class="row">
+                                                                        <div class="col-lg-12 pl-lg-4 pr-lg-4 pb-lg-1">
+                                                                            <p class="mb-1 text-s13 text-readjust " style="color: #696969;">Attachments</p>
+                                                                        </div>
+
+                                                                        <!-- First -->
+                                                                        <div class="col-lg-12 pl-lg-4 pr-lg-4 pb-lg-3">
+                                                                            <img class="profile-attachments" src="../../assets/icons/no_preview.png" alt="">
+                                                                        </div>
+
+                                                                        <!-- Second -->
+                                                                        <div class="col-lg-12 pl-lg-4 pr-lg-4 pt-lg-0 pt-2">
+                                                                            <img class="profile-attachments" src="../../assets/icons/no_preview.png" alt="">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- ------ Buttons ------ -->
+                                                <div class="col-lg-3 col-md-3 col-sm-3 col-3 pl-lg-4 pr-lg-4 pb-lg-2 px-md-2 pl-sm-2">
+                                                    <div class="row">
+
+                                                        <!-- Total Amount Paid -->
+                                                        <div class="col-lg-12 mt-2 pr-md-2 pr-lg-3">
+                                                            <div class="card-yellowForm">
+                                                                <p class="mb-0 text-s13" style="color: #696969;">Total Amount Paid</p>
+                                                                <p class="mb-0 text-s16 text-semibold text-adjust" style="color: #282828;">AED 65427</p>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- Total Post -->
+                                                        <div class="col-lg-12 mt-2 pr-md-2 pr-lg-3">
+                                                            <div class="card-yellowForm">
+                                                                <p class="mb-0 text-s13" style="color: #696969;">Total Post</p>
+                                                                <p class="mb-0 text-s16 text-semibold text-adjust" style="color: #282828;">75</p>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- Sold -->
+                                                        <div class="col-lg-12 mt-2 pr-md-2 pr-lg-3">
+                                                            <div class="card-yellowForm">
+                                                                <p class="mb-0 text-s13" style="color: #696969;">Sold</p>
+                                                                <p class="mb-0 text-s16 text-semibold text-adjust" style="color: #282828;">16</p>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- Wished Items -->
+                                                        <div class="col-lg-12 mt-2 pr-md-2 pr-lg-3">
+                                                            <div class="card-greenForm">
+                                                                <p class="mb-0 text-s13" style="color: #FFF;">Wished Items</p>
+                                                                <p class="mb-0 text-s16 text-semibold text-adjust" style="color: #FFF;">75</p>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- Cart -->
+                                                        <div class="col-lg-12 mt-2 pr-md-2 pr-lg-3">
+                                                            <div class="card-orangeForm">
+                                                                <p class="mb-0 text-s13" style="color: #FFF;">Cart</p>
+                                                                <p class="mb-0 text-s16 text-semibold text-adjust" style="color: #FFF;">16</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <hr class="mt-3 mb-3 ml-3 mr-3">
+
+                                        <!-- --------------- Message Row --------------- -->
+                                        <div class="col-lg-12 pb-lg-2">
+                                            <div class="row">
+                                                <div class="col-lg-7 col-md-7 col-sm-6 col-7 pr-0">
+                                                    <div class="form-group w-100">
+                                                        <input type="text" class="form-control pt-lg-2 pb-lg-2 text-s15 w-100" placeholder="Type a message">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2 col-md-2 col-sm-3 col-3 pr-0 pl-lg-3 pl-md-2 pl-2">
+                                                    <button class="btn btn-orange text-s15 text-resize w-100 btn-width pt-lg-2 pb-lg-2 py-md-2 px-md-2 py-2 px-0 border-grey">
+                                                        Send message
+                                                    </button>
+                                                </div>
+
+                                                <div class="col-lg-3 col-md-3 col-sm-3 col-2 pl-lg-5 pr-lg-4 paddingleft-30 pl-sm-2 pl-1 pr-0">
+                                                    <button class="btn btn-notification collapsed text-s13 text-resize w-100 btn-width pt-lg-2 pb-lg-2 py-md-1 px-md-2 py-sm-1 py-1 px-0 text-normal"
+                                                        data-toggle="collapse" data-target="#notifications" aria-expanded="false"
+                                                        aria-controls="notifications">
+                                                        Notification
+                                                        <span class="text-s15 text-semibold ml-lg-1">6</span>
+                                                        <i class="fa fa-angle-up notification-icon" style="margin-left: 10px; font-size: 19px;"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- --------------- Notification Row --------------- -->
+                                        <div class="col-lg-12 pt-lg-3 collapse" id="notifications">
+                                            <div class="row">
+
+                                                <!-- Single Notification Card -->
+                                                <div class="col-lg-12 pr-4 mb-lg-2">
+                                                    <div class="card card-notifications pt-lg-3 pb-lg-3">
+                                                        <div class="col-lg-12">
+                                                            <div class="row">
+                                                                <!-- Date -->
+                                                                <div class="col-lg-2">
+                                                                    <p class="mb-0 text-s14 mt-lg-2" style="line-height: 1.5; color: #757779;"> 11 October 2018</p>
+                                                                </div>
+
+                                                                <!-- Details -->
+                                                                <div class="col-lg-10">
+                                                                    <p class="mb-0 text-truncate-2 text-s14" style="line-height: 1.5; color: #757779;">Toggle the visibility of content across your project
+                                                                        with a few classes and our JavaScript plugins.Toggle
+                                                                        the visibility of content across your project with
+                                                                        a few classes and our JavaScript plugins.Toggle the
+                                                                        visibility of content across your project with a
+                                                                        few classes and our JavaScript plugins.Toggle the
+                                                                        visibility of content across your project with a
+                                                                        few classes and our JavaScript plugins.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- // TODO: Remaining Cards -->
+                                                <div class="col-lg-12 pr-4 mb-lg-2">
+                                                    <div class="card card-notifications pt-lg-3 pb-lg-3">
+                                                        <div class="col-lg-12">
+                                                            <div class="row">
+                                                                <div class="col-lg-2">
+                                                                    <p class="mb-0 text-s14 mt-lg-2" style="line-height: 1.5; color: #757779;"> 11 October 2018</p>
+                                                                </div>
+                                                                <div class="col-lg-10">
+                                                                    <p class="mb-0 text-truncate-2 text-s14" style="line-height: 1.5; color: #757779;">Toggle the visibility of content across your project
+                                                                        with a few classes and our JavaScript plugins.Toggle
+                                                                        the visibility of content across your project with
+                                                                        a few classes and our JavaScript plugins.Toggle the
+                                                                        visibility of content across your project with a
+                                                                        few classes and our JavaScript plugins.Toggle the
+                                                                        visibility of content across your project with a
+                                                                        few classes and our JavaScript plugins.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 pr-4 mb-lg-2">
+                                                    <div class="card card-notifications pt-lg-3 pb-lg-3">
+                                                        <div class="col-lg-12">
+                                                            <div class="row">
+                                                                <div class="col-lg-2">
+                                                                    <p class="mb-0 text-s14 mt-lg-2" style="line-height: 1.5; color: #757779;"> 11 October 2018</p>
+                                                                </div>
+                                                                <div class="col-lg-10">
+                                                                    <p class="mb-0 text-truncate-2 text-s14" style="line-height: 1.5; color: #757779;">Toggle the visibility of content across your project
+                                                                        with a few classes and our JavaScript plugins.Toggle
+                                                                        the visibility of content across your project with
+                                                                        a few classes and our JavaScript plugins.Toggle the
+                                                                        visibility of content across your project with a
+                                                                        few classes and our JavaScript plugins.Toggle the
+                                                                        visibility of content across your project with a
+                                                                        few classes and our JavaScript plugins.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 pr-4 mb-lg-2">
+                                                    <div class="card card-notifications pt-lg-3 pb-lg-3">
+                                                        <div class="col-lg-12">
+                                                            <div class="row">
+                                                                <div class="col-lg-2">
+                                                                    <p class="mb-0 text-s14 mt-lg-2" style="line-height: 1.5; color: #757779;"> 11 October 2018</p>
+                                                                </div>
+                                                                <div class="col-lg-10">
+                                                                    <p class="mb-0 text-truncate-2 text-s14" style="line-height: 1.5; color: #757779;">Toggle the visibility of content across your project
+                                                                        with a few classes and our JavaScript plugins.Toggle
+                                                                        the visibility of content across your project with
+                                                                        a few classes and our JavaScript plugins.Toggle the
+                                                                        visibility of content across your project with a
+                                                                        few classes and our JavaScript plugins.Toggle the
+                                                                        visibility of content across your project with a
+                                                                        few classes and our JavaScript plugins.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /.Profile Card -->
+
+                                    <!-- ------------------ Tabs & Table ------------------------ -->
+                                    <div class="col-lg-12 mt-lg-5">
+
+
+                                        <!-- ------------------ Tabs ------------------------ -->
+                                        <ul class="nav nav-tabs justify-content-center" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link green active" id="approved-tab" data-toggle="tab" href="#approved" role="tab" aria-controls="approved"
+                                                    aria-selected="true">Approved 30</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link orange" id="pending-tab" data-toggle="tab" href="#pending" role="tab" aria-controls="pending" aria-selected="false">Pending 20</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link red" id="rejected-tab" data-toggle="tab" href="#rejected" role="tab" aria-controls="rejected" aria-selected="false">Rejected 30</a>
+                                            </li>
+                                        </ul>
+
+                                        <div class="tab-content mb-lg-5">
+
+                                            <!-- ------------------ Table : Approved ------------------------ -->
+                                            <div class="tab-pane fade show active" id="approved" role="tabpanel" aria-labelledby="approved-tab">
+                                                <!-- Main Table -->
+                                                <div class="wrapper">
+                                                    <table class="table table-custom mb-0">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="w-t1">SI No</th>
+                                                                <th class="w-t2">Products</th>
+                                                                <th class="w-t3">Price</th>
+                                                                <th class="w-t4 w-t21">Date of post</th>
+                                                                <th class="w-t5">Status</th>
+                                                                <th class="w-t6 w-t31">Wished List</th>
+                                                                <th class="w-t7">View</th>
+                                                            </tr>
+                                                        </thead>
+
+                                                        <tbody>
+                                                            <!-- ------ Add *ngFor in the below line ------ -->
+                                                            <tr>
+                                                                <td class="text-center">1</td>
+                                                                <td>Audi</td>
+                                                                <td>AED 456895</td>
+                                                                <td>1 Sep 2018</td>
+                                                                <td class="text-available">Available</td>
+                                                                <td class="text-center">50</td>
+                                                                <td class="text-center">75</td>
+                                                            </tr>
+
+                                                            <!-- //TODO : Remove Remaining -->
+                                                            <tr>
+                                                                <td class="text-center">1</td>
+                                                                <td>Audi</td>
+                                                                <td>AED 456895</td>
+                                                                <td>1 Sep 2018</td>
+                                                                <td class="text-available">Available</td>
+                                                                <td class="text-center">50</td>
+                                                                <td class="text-center">75</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center">1</td>
+                                                                <td>Audi</td>
+                                                                <td>AED 456895</td>
+                                                                <td>1 Sep 2018</td>
+                                                                <td class="text-booked">Available</td>
+                                                                <td class="text-center">50</td>
+                                                                <td class="text-center">75</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center">1</td>
+                                                                <td>Audi</td>
+                                                                <td>AED 456895</td>
+                                                                <td>1 Sep 2018</td>
+                                                                <td class="text-available">Available</td>
+                                                                <td class="text-center">50</td>
+                                                                <td class="text-center">75</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center">1</td>
+                                                                <td>Audi</td>
+                                                                <td>AED 456895</td>
+                                                                <td>1 Sep 2018</td>
+                                                                <td class="text-available">Available</td>
+                                                                <td class="text-center">50</td>
+                                                                <td class="text-center">75</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center">1</td>
+                                                                <td>Audi</td>
+                                                                <td>AED 456895</td>
+                                                                <td>1 Sep 2018</td>
+                                                                <td class="text-available">Available</td>
+                                                                <td class="text-center">50</td>
+                                                                <td class="text-center">75</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center">1</td>
+                                                                <td>Audi</td>
+                                                                <td>AED 456895</td>
+                                                                <td>1 Sep 2018</td>
+                                                                <td class="text-booked">Available</td>
+                                                                <td class="text-center">50</td>
+                                                                <td class="text-center">75</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center">1</td>
+                                                                <td>Audi</td>
+                                                                <td>AED 456895</td>
+                                                                <td>1 Sep 2018</td>
+                                                                <td class="text-available">Available</td>
+                                                                <td class="text-center">50</td>
+                                                                <td class="text-center">75</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center">1</td>
+                                                                <td>Audi</td>
+                                                                <td>AED 456895</td>
+                                                                <td>1 Sep 2018</td>
+                                                                <td class="text-booked">Available</td>
+                                                                <td class="text-center">50</td>
+                                                                <td class="text-center">75</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                                <!-- Total Table -->
+                                                <table class="table table-bottom">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="w-tb1 w-tbmd1 text-semibold">Total</td>
+                                                            <td class="w-tb2 w-tbmd2 text-semibold">AED 23456</td>
+                                                            <td class="w-tb3 text-semibold"></td>
+                                                            <td class="w-tb4 w-tbmd4 text-semibold text-center px-md-0">5413</td>
+                                                            <td class="w-tb5 w-tbmd5 text-semibold px-md-0 text-center">1134</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                            <!-- ------------------ Table : Pending ------------------------ -->
+                                            <div class="tab-pane fade" id="pending" role="tabpanel" aria-labelledby="pending-tab">
+                                                <div class="wrapper mb-3">
+                                                    <table class="table table-custom mb-0">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>SI No</th>
+                                                                <th>Products</th>
+                                                                <th>Price</th>
+                                                                <th>Date of post</th>
+                                                            </tr>
+                                                        </thead>
+
+                                                        <tbody>
+                                                            <!-- ------ Add *ngFor in the below line ------ -->
+                                                            <tr>
+                                                                <td class="text-center">1</td>
+                                                                <td>Audi</td>
+                                                                <td>AED 456895</td>
+                                                                <td>1 Sep 2018</td>
+                                                            </tr>
+
+                                                            <!-- //TODO : Remove Remaining -->
+                                                            <tr>
+                                                                <td class="text-center">1</td>
+                                                                <td>Audi</td>
+                                                                <td>AED 456895</td>
+                                                                <td>1 Sep 2018</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center">1</td>
+                                                                <td>Audi</td>
+                                                                <td>AED 456895</td>
+                                                                <td>1 Sep 2018</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center">1</td>
+                                                                <td>Audi</td>
+                                                                <td>AED 456895</td>
+                                                                <td>1 Sep 2018</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center">1</td>
+                                                                <td>Audi</td>
+                                                                <td>AED 456895</td>
+                                                                <td>1 Sep 2018</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center">1</td>
+                                                                <td>Audi</td>
+                                                                <td>AED 456895</td>
+                                                                <td>1 Sep 2018</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center">1</td>
+                                                                <td>Audi</td>
+                                                                <td>AED 456895</td>
+                                                                <td>1 Sep 2018</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center">1</td>
+                                                                <td>Audi</td>
+                                                                <td>AED 456895</td>
+                                                                <td>1 Sep 2018</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center">1</td>
+                                                                <td>Audi</td>
+                                                                <td>AED 456895</td>
+                                                                <td>1 Sep 2018</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+
+                                            <!-- ------------------ Table : Rejected ------------------------ -->
+                                            <div class="tab-pane fade" id="rejected" role="tabpanel" aria-labelledby="rejected-tab">
+
+                                                <!-- Main Table -->
+                                                <div class="wrapper">
+                                                    <table class="table table-custom mb-0">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="w-t1">SI No</th>
+                                                                <th class="w-t2">Products</th>
+                                                                <th class="w-t3">Price</th>
+                                                                <th class="w-t4">Date of post</th>
+                                                                <th class="w-t5">Status</th>
+                                                                <th class="w-t6">Wished List</th>
+                                                                <th class="w-t7">View</th>
+                                                            </tr>
+                                                        </thead>
+
+                                                        <tbody>
+                                                            <!-- ------ Add *ngFor in the below line ------ -->
+                                                            <tr>
+                                                                <td class="text-center">1</td>
+                                                                <td>Audi</td>
+                                                                <td>AED 456895</td>
+                                                                <td>1 Sep 2018</td>
+                                                                <td class="text-available">Available</td>
+                                                                <td class="text-center">50</td>
+                                                                <td class="text-center">75</td>
+                                                            </tr>
+
+                                                            <!-- //TODO : Remove Remaining -->
+                                                            <tr>
+                                                                <td class="text-center">1</td>
+                                                                <td>Audi</td>
+                                                                <td>AED 456895</td>
+                                                                <td>1 Sep 2018</td>
+                                                                <td class="text-available">Available</td>
+                                                                <td class="text-center">50</td>
+                                                                <td class="text-center">75</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center">1</td>
+                                                                <td>Audi</td>
+                                                                <td>AED 456895</td>
+                                                                <td>1 Sep 2018</td>
+                                                                <td class="text-booked">Available</td>
+                                                                <td class="text-center">50</td>
+                                                                <td class="text-center">75</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center">1</td>
+                                                                <td>Audi</td>
+                                                                <td>AED 456895</td>
+                                                                <td>1 Sep 2018</td>
+                                                                <td class="text-available">Available</td>
+                                                                <td class="text-center">50</td>
+                                                                <td class="text-center">75</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center">1</td>
+                                                                <td>Audi</td>
+                                                                <td>AED 456895</td>
+                                                                <td>1 Sep 2018</td>
+                                                                <td class="text-available">Available</td>
+                                                                <td class="text-center">50</td>
+                                                                <td class="text-center">75</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center">1</td>
+                                                                <td>Audi</td>
+                                                                <td>AED 456895</td>
+                                                                <td>1 Sep 2018</td>
+                                                                <td class="text-available">Available</td>
+                                                                <td class="text-center">50</td>
+                                                                <td class="text-center">75</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center">1</td>
+                                                                <td>Audi</td>
+                                                                <td>AED 456895</td>
+                                                                <td>1 Sep 2018</td>
+                                                                <td class="text-booked">Available</td>
+                                                                <td class="text-center">50</td>
+                                                                <td class="text-center">75</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center">1</td>
+                                                                <td>Audi</td>
+                                                                <td>AED 456895</td>
+                                                                <td>1 Sep 2018</td>
+                                                                <td class="text-available">Available</td>
+                                                                <td class="text-center">50</td>
+                                                                <td class="text-center">75</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-center">1</td>
+                                                                <td>Audi</td>
+                                                                <td>AED 456895</td>
+                                                                <td>1 Sep 2018</td>
+                                                                <td class="text-booked">Available</td>
+                                                                <td class="text-center">50</td>
+                                                                <td class="text-center">75</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                                <!-- Total Table -->
+                                                <table class="table table-bottom">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="w-tb1 text-semibold">Total</td>
+                                                            <td class="w-tb2 text-semibold">AED 23456</td>
+                                                            <td class="w-tb3 text-semibold"></td>
+                                                            <td class="w-tb4 text-semibold text-center">5413</td>
+                                                            <td class="w-tb5 text-semibold text-center">1134</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- /row -->
+                        </div>
+                    </div>
+                    <!-- ------------------------- BODY ends ------------------------- -->
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- ------------------------- MAIN CONTENT ------------------------- -->
+
+
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

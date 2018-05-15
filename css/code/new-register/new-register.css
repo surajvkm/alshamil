@@ -1,0 +1,415 @@
+/* --------------------------------------------- NEW REGISTER --------------------------------------------- */
+/* ----------------- Tabs ------------------ */
+.nav-tabs {
+    border-color: #DBDBDB;
+}
+
+.nav-tabs .nav-item {
+    margin: 0;
+    width: 15%;
+    text-align: center;
+}
+
+.nav-tabs .nav-link.newRegTabs {
+    color: #757779;
+    background-color: #F0F0F0;
+    border-color: #F0F0F0;
+    border-radius: 0px;
+    font-size: 14px;
+    margin-right: 2px;
+    padding: .3rem 1rem;
+}
+
+.nav-tabs .nav-link.newRegTabs.active {
+    color: #FFF;
+    background-color: #F58220;
+    border-color: #F58220;
+}
+
+/* ------------------------- Tab Content ---------------------------- */
+.h-87 {
+    height: 87px;
+}
+
+.h-77 {
+    height: 77px;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.bg-newReg:nth-of-type(even) {
+    background-color: #FCFCFC;
+}
+
+.bg-newReg:nth-of-type(odd) {
+    background-color: #F0F0F0;
+}
+
+.userImage {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #F5821F;
+}
+
+.vbr {
+    border-right: 1px solid #CBCBCB;
+}
+
+/* -------------------- Modal -------------------- */
+.modal-dialog.newRegModal .modal-content {
+    background-color: #F2F2F2;
+}
+
+@media (min-width: 576px) {
+    .modal-dialog.newRegModal {
+        max-width: 750px;
+    }
+}
+
+.profileImage {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+}
+
+.bg-profileForm {
+    background-color: #F9F9F9;
+    height: 100%;
+    border-radius: 6px;
+}
+
+.text-truncate-4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.vbl {
+    border-left: 1px solid #CBCBCB;
+}
+
+.profile-attachments {
+    width: 100%;
+    height: 100px;
+}
+
+.btn-green {
+    background-color: #69CA21;
+    border: 1px solid #69CA21;
+}
+
+.btn-green:hover, .btn-green:focus, .btn-green:active {
+    background-color: rgba(106, 202, 33, 0.63);
+    border: 1px solid rgba(106, 202, 33, 0.74);
+    outline: none;
+    -webkit-box-shadow: 0 3px 5px rgba(106, 202, 33, 0.445);
+    -moz-box-shadow: 0 3px 5px rgba(106, 202, 33, 0.445);
+    box-shadow: 0 3px 5px rgba(106, 202, 33, 0.445);
+}
+
+/* --------------------------------------------- EDIT PROFILE --------------------------------------------- */
+
+label {
+    color: #3F3F3F;
+    margin-bottom: 3px;
+}
+
+.form-control.input-custom {
+    color: #3F3F3F;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #FBFBFB;
+    border: 1px solid #CFCFCF;
+}
+
+input[disabled] , input:disabled {
+    opacity: 0.6;
+    cursor: no-drop !important;
+}
+
+.form-control.input-custom::placeholder {
+    color: #AEAEAE;
+    font-weight: 400;
+}
+.form-control.input-custom:-ms-input-placeholder {
+    color: #AEAEAE;
+    font-weight: 400;
+}
+.form-control.input-custom::-ms-input-placeholder { 
+    color: #AEAEAE;
+    font-weight: 400;
+}
+
+.br-4 {
+    border-radius: 4px !important;
+}
+
+/* Cards */
+.pic-card {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    background-color: #FBFBFB;
+    border: 1px solid #C2C2C2;
+    border-radius: 50%;
+}
+
+.pic-card img {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.attach-card {
+    width: 150px;
+    height: 100px;
+    border-radius: 0;
+    margin-bottom: 3px;
+    text-align: center;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    background-color: #FBFBFB;
+    border: none;
+}
+
+.attach-card img {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+
+/* --------------------------------------------- MEDIA QUERIES --------------------------------------------- */
+
+/* ------------- LG ------------- */
+@media(max-width:1024px) and (min-width:769px) { 
+    /* Tabs */
+    .nav-tabs .nav-item {
+        width: 20%;
+    }
+
+    .nav-tabs .nav-link.newRegTabs {
+        font-size: 12px;
+        padding: .3rem .2rem;
+    }
+}
+
+/* ------------- MD ------------- */
+@media(max-width:768px) and (min-width:577px) {
+    /* Main Content */
+    .col-main {
+    webkit-box-flex: 0;
+    -ms-flex: 0 0 78%;
+    flex: 0 0 70%;
+    position: relative;
+    min-height: 1px;
+    }
+
+    /* Tabs */
+    .nav-tabs .nav-item {
+        width: 25%;
+    }
+
+    .nav-tabs .nav-link.newRegTabs {
+        font-size: 12px;
+        padding: .3rem .2rem;
+    }
+
+    /* image */
+    .userImage {
+        width: 51px;
+        height: 51px;
+    }
+
+    /* Font */
+    .text-resize {
+        font-size: 11px;
+    }
+
+    .text-email {
+        font-size: 10px;
+    }
+
+    .vbr {
+        height: 50px;
+    }
+
+    /* Height */
+    .h-md-63 {
+        height: 63px;
+    }
+
+    /* Edit-Profile */
+    .form-control.input-custom {
+        font-size: 14px;
+    }
+}
+
+/* ------------- SM ------------- */
+@media(max-width:576px) and (min-width:550px) {
+
+    /* Main Content */
+    .col-main {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        position: relative;
+        min-height: 1px;
+    }
+
+    /* Tabs */
+    .nav-tabs .nav-item {
+        width: 25%;
+    }
+
+    .nav-tabs .nav-link.newRegTabs {
+        font-size: 12px;
+        padding: .3rem .2rem;
+    }
+
+    /* image */
+    .userImage {
+        width: 51px;
+        height: 51px;
+    }
+
+     /* Font */
+     .text-resize {
+        font-size: 11px;
+    }
+
+    /* Height */
+    .h-md-63 {
+        height: 63px;
+    }
+
+    .vbr {
+        height: 50px;
+    }
+
+    .text-email {
+        font-size: 10px;
+    }
+}
+
+/* ------------- XS ------------- */
+@media(max-width:550px) and (min-width:425px) {
+
+    /* Main Content */
+    .col-main {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        position: relative;
+        min-height: 1px;
+    }
+
+    /* Tabs */
+    .nav-tabs .nav-item {
+        width: 25%;
+    }
+
+    .nav-tabs .nav-link.newRegTabs {
+        font-size: 12px;
+        padding: .3rem .2rem;
+    }
+
+    /* image */
+     .userImage {
+        width: 51px;
+        height: 51px;
+    }
+
+    .h-sm-106 {
+        height: 106px;
+    }
+
+    .text-adjust {
+        font-size: 9px;
+    }
+
+    /* Font */
+    .text-resize {
+        font-size: 11px;
+    }
+}
+
+/* ------------- Below XS ------------- */
+@media(max-width:424px) {
+    /* Main Content */
+    .col-main {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        position: relative;
+        min-height: 1px;
+    }
+
+    /* Tabs */
+    .nav-tabs .nav-item {
+        width: 25%;
+    }
+
+    .nav-tabs .nav-link.newRegTabs {
+        font-size: 8px;
+        padding: .3rem .2rem;
+    }
+
+    /* image */
+    .userImage {
+        width: 48px;
+        height: 51px;
+    }
+
+    /* Font */
+    .text-resize {
+        font-size: 11px;
+    }
+
+    .text-adjust {
+        font-size: 6px;
+    }
+
+    .h-sm-106 {
+        height: 106px;
+    }
+
+    .vbr {
+        margin-bottom: 4px;
+    }
+
+    /* Edit-Profile */
+    .form-control.input-custom {
+        font-size: 10px;
+    }
+
+    .profileImage {
+        width: 90px;
+        height: 90px;
+    }
+
+    .social-icon {
+        height: 20px;
+        width: 16px;
+    }
+}

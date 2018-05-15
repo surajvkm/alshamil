@@ -1,0 +1,421 @@
+.btn-dashGreen {
+    color: #FFF;
+    background-color: #75CF00;
+    border: 1px solid #75CF00;
+}
+.btn-dashRed {
+    color: #FFF;
+    background-color: #FF0000;
+    border: 1px solid #FF0000;
+}
+.btn-dashGrey {
+    color: #FFF;
+    background-color: #757779;
+    border: 1px solid #757779;
+}
+.btn-dashOrange {
+    color: #FFF;
+    background-color: #F7941D;
+    border: 1px solid #F7941D;
+}
+.btn-dashSalmon {
+    color: #FFF;
+    background-color: #F26522;
+    border: 1px solid #F26522;
+}
+
+.btn-large {
+    border-radius: 0px;
+    margin-right: 14px;
+    font-size: 18px;
+    pointer-events: none;
+    cursor: default;
+
+    height: 80px;
+    width: 18.3%;
+}
+
+.btn-large:last-child {
+    margin-right: 0px !important;
+}
+
+.text-s25 {
+    font-size: 25px;
+}
+
+.graphDiv, .traderDiv {
+    background-color: #F2F2F2;
+    padding: 10px;
+}
+
+.graphDiv {
+    width: 70%;
+    margin-right: 2%;
+}
+
+.traderDiv {
+    width: 28%;
+}
+
+.userImageD {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #F5821F;
+}
+
+.scaleDiv:hover {
+    -webkit-transform: scale(1.04);
+}
+
+/* ----------------------------------------- MEDIA QUERIES ----------------------------------------- */
+@media (min-width:1440px) {
+    .canvasjs-chart-container, .canvasjs-chart-canvas {
+        width: 100%!important;
+        height: 310px!important;
+    }
+
+    .db_graph_bottomDiv {
+        margin-top: 2px !important;
+    }
+}
+
+/* -------------Above LG ------------- */
+@media(max-width:1200px) and (min-width:769px) {
+    .canvasjs-chart-container, .canvasjs-chart-canvas {
+        width: 100%!important;
+    }
+}
+
+@media(max-width:1024px) and (min-width:769px) {
+
+    .user-padding {
+        padding-left: 30px !important;
+    }
+
+    .btn-large {
+        margin-right: 11px !important;
+    }
+
+    .btn {
+        padding: 6px 3px !important;
+    }
+
+    .percentage {
+        margin-left: 5px !important;
+    }
+
+    .canvasjs-chart-container, .canvasjs-chart-canvas {
+        width: 100%!important;
+        height: 200px !important;
+    }
+
+    .ypp_graphTabSubList {
+        padding-left: 0;
+    }
+
+    .db_graphSubTabs a {
+        padding: 25px 8px 5px 8px;
+        font-size: 16px;
+    }
+
+    .db_graph_bottomDiv {
+        margin-top: 17px !important;
+    }
+
+    .canvasjs-chart-credit {
+        top:69px !important;
+    }
+}
+
+/* ------------- MD ------------- */
+@media(max-width:768px) and (min-width:577px) {
+    .col-main {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 78%;
+        flex: 0 0 70%;
+        position: relative;
+        min-height: 1px;
+    }
+
+    .btn-large {
+        width: 17.8%;
+        font-size: 15px;
+        margin-right: 5px!important;
+    }
+
+    .graphDiv {
+        width: 65%;
+    }
+
+    .traderDiv {
+        width: 33%;
+        padding: 5px;
+    }
+    .text-resize {
+        font-size: 13px;
+    }
+
+    .text-adjust {
+        font-size: 10px;
+    }
+
+    .userImageD {
+        width: 45px;
+        height: 45px;
+    }
+
+    .canvasjs-chart-container, .canvasjs-chart-canvas {
+        width: 314px !important;
+        height:200px !important;
+    }
+    .db_graph_bottomDiv {
+        margin-top: 20px !important;
+    }
+
+    .canvasjs-chart-credit {
+        top:100px!important;
+    }
+
+    .text-size-13 {
+        font-size: 13px !important;
+    }
+}
+
+/* ------------- below MD ------------- */
+@media(max-width:577px) and (min-width:513px) {
+    /* Main Content */
+    .col-main {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        position: relative;
+        min-height: 1px;
+    }
+    /* ------ Side Nav ------ */
+    .col-sideNav {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 28%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    position: relative;
+    min-height: 1px;
+    }
+}
+
+/* ------------- SM ------------- */
+@media(max-width:576px) and (min-width:550px) {
+
+    /* Main Content */
+    .col-main {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        position: relative;
+        min-height: 1px;
+    }
+
+    .btn-large {
+        width: 17.8%;
+        font-size: 15px;
+        margin-right: 7px!important;
+    }
+
+    .traderDiv {
+        width: 28%;
+        padding: 5px;
+    }
+    .text-resize {
+        font-size: 13px;
+    }
+
+    .text-adjust {
+        font-size: 10px;
+    }
+
+    .userImageD {
+        width: 45px;
+        height: 45px;
+    }
+
+    .canvasjs-chart-container, .canvasjs-chart-canvas {
+        width: 354px !important;
+        height: 200px !important;
+    }
+
+    .ypp_graphTabList {
+        padding-left: 0px !important;
+    }
+
+    .db_graphSubTabs a {
+        padding: 25px 4px 5px 4px;
+        font-size: 13px;
+    }
+    .canvasjs-chart-credit {
+            top:100px !important;
+    }
+    .db_graph_bottomDiv {
+        margin-top: 15px;
+    }
+}
+
+/* ------------- XS ------------- */
+@media(max-width:550px) and (min-width:425px) {
+
+    /* Main Content */
+    .col-main {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        position: relative;
+        min-height: 1px;
+    }
+
+    /* button */
+    .btn-text {
+        font-size: 13px;
+    }
+
+    .btn-num {
+        font-size: 16px;
+    }
+
+    .btn-large {
+        width: 17.8%;
+        font-size: 15px;
+        margin-right: 5px!important;
+    }
+
+    /* Trader */
+    .traderDiv {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .text-resize {
+        font-size: 13px;
+    }
+
+    /* Graph */
+    .graphDiv {
+        width: 100%;
+    }
+
+    .postnumber-padding {
+        padding-left: 40px !important;
+    }
+
+    /* User Image */
+    .userImageD {
+        width: 50px;
+        height: 50px;
+    }
+
+    .user-padding {
+        padding-left: 0 !important;
+    }
+
+    .canvasjs-chart-container, .canvasjs-chart-canvas {
+        width: 100%!important;
+        height:200px !important;
+    }
+
+    .ypp_graphTabList {
+        padding-left: 0px !important;
+    }
+
+    .db_graphSubTabs a {
+        padding: 25px 4px 5px 4px;
+        font-size: 14px;
+    }
+
+    .db_graph_bottomDiv {
+        margin-top: 20px !important;
+    }
+
+    .canvasjs-chart-credit {
+        top:115px!important;
+    }
+}
+
+/* ------------- Below XS ------------- */
+@media(max-width:424px) {
+
+    /* Main Content */
+    .col-main {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        position: relative;
+        min-height: 1px;
+    }
+
+    .btn-large {
+        width: 16.8%;
+        font-size: 15px;
+        margin-right: 6px!important;
+        padding: 0;
+    }
+
+    .graphDiv {
+        width: 100%;
+    }
+
+    .traderDiv {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .text-resize {
+        font-size: 13px;
+    }
+
+    .text-trader {
+        font-size: 13px;
+    }
+
+    .userImageD {
+        width: 50px;
+        height: 50px;
+    }
+
+    .btn-text {
+        font-size: 10px;
+    }
+
+    .btn-num {
+        font-size: 14px;
+    }
+
+    .canvasjs-chart-container, .canvasjs-chart-canvas {
+        width:100% !important;
+        height:200px !important;
+    }
+
+    .ypp_graphTabList {
+        padding-left: 0px !important;
+    }
+
+    .db_graphTabs {
+        margin-left: 0px !important;
+        padding-left:0px !important;
+        font-size: 9px !important;
+    }
+
+    .ypp_graphTabSubList {
+        padding-left:0px !important;
+    }
+
+    .db_graphSubTabs a {
+        padding: 25px 4px 5px 4px;
+        font-size: 9px;
+    }
+
+    .db_graph_bottomDiv {
+        margin-top: 10px !important;
+    }
+
+    .canvasjs-chart-credit {
+        top:58px!important;
+    }
+}
